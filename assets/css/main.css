@@ -1567,7 +1567,7 @@ section,
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: var(--accent-color);
 }
 
 .team .team-member .member-info span {
