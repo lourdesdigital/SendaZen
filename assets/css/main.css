@@ -1684,21 +1684,22 @@ section,
 }
 
 .pricing .featured h3 {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background: var(--accent-light-color);
+  color: var(--accent-color);
 }
 
 .pricing .advanced {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background: var(--accent-light-color);
+  color: var(--accent-color);
   width: 200px;
   position: absolute;
   top: 18px;
   right: -68px;
+  font-weight: 600;
   transform: rotate(45deg);
   z-index: 1;
   font-size: 14px;
-  padding: 1px 0 3px 0;
+  padding: 2px 0 2px 0;
 }
 
 /*--------------------------------------------------------------
