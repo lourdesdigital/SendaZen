@@ -12,14 +12,92 @@
 --------------------------------------------------------------*/
 
 
+/* New */
+/*
+@font-face {
+  font-family: 'blatant-regular';
+  src: url('/assets/fonts/Blatant.otf') format('truetype');
+}
+@font-face {
+  font-family: 'blatant-regular-italic';
+  src: url('/assets/fonts/Blatant-Italic.otf') format('truetype');
+}
+@font-face {
+  font-family: 'blatant-bold';
+  src: url('/assets/fonts/Blatant-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'blatant-bold-italic';
+  src: url('/assets/fonts/Blatant-BoldItalic.otf') format('truetype');
+}
+*/
+
+/* Fonts */
+:root {
+  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Montserrat",  sans-serif;
+  --nav-font: "Open Sans",  sans-serif;
+
+/* New */
+/*
+  --blatant-regular: 'blatant-regular';
+  --blatant-regular-italic: 'blatant-regular-italic';
+  --blatant-bold: 'blatant-bold', sans-serif;
+  --blatant-bold-italic: 'blatant-bold-italic';
+  */
+
+  --font-regular: 'all-round-gothic', sans-serif;
+  --font-regular-italic: 'all-round-gothic', sans-serif;
+  --font-bold: 'all-round-gothic', sans-serif;
+  --font-bold-italic: 'all-round-gothic', sans-serif;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root { 
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-important-color: #8052C9;
+  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #8052C9; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-light-color: #B5E742;
+
+  --accent-light-pastel-color: #DAFFB9;
+  --accent-light-2-color: #FEEF78;
+  --accent-pastel-color: #CCBDF4;
+  --accent-pastel-2-color: #FBB9F4;
+
+
+  --contrast-color: #ffffff; /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: #222222;  /* The default color of the main navmenu links */
+  --nav-hover-color: #B5E742; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #222222; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #8052C9; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+
+
 
 /*INICIO Clients-container */
 .square {
-  background-color: #B5E742;
+  background-color: var(--accent-light-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0C008F;
+  color: var(--accent-color);
   font-size: 12px;
   font-weight: bold;
   border-radius: 20px;
@@ -57,41 +135,16 @@
 
 
 
-/* Fonts */
-:root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Montserrat",  sans-serif;
-  --nav-font: "Open Sans",  sans-serif;
+/* Icons */
+
+.material-symbols-outlined {
+  font-size: 14px;
+  color: var(--accent-color);
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --background-important-color: #0C008F;
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0C008F; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --accent-light-color: #B5E742;
-  --contrast-color: #ffffff; /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
-}
+/*FIN Icons */
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
-:root {
-  --nav-color: #222222;  /* The default color of the main navmenu links */
-  --nav-hover-color: #B5E742; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #222222; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #0C008F; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
-}
 
-/* Smooth scroll */
-:root {
-  scroll-behavior: smooth;
-}
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -116,7 +169,9 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
-  font-family: var(--heading-font);
+  font-family: var(--font-bold);
+  font-weight: 700;
+  font-style: normal;
 }
 
 /*--------------------------------------------------------------
@@ -192,7 +247,7 @@ h6 {
 }
 
 .header .logo h1 {
-  font-size: 30px;
+  font-size: 40px;
   line-height: 120%;
   margin: 0;
   font-weight: 600;
@@ -630,8 +685,9 @@ h6 {
 .footer .footer-about a {
   color: var(--heading-color);
   font-size: 24px;
-  font-weight: 600;
-  font-family: var(--heading-font);
+  font-weight: 700;
+  font-style: normal;
+  font-family: var(--font-bold);
 }
 
 .footer .footer-contact p {
@@ -859,7 +915,8 @@ section,
   margin: 10px 0 0 0;
   font-size: 32px;
   font-weight: 700;
-  font-family: var(--heading-font);
+  font-style: normal;
+  font-family: var(--font-bold);
 }
 
 .section-title p span{
@@ -868,6 +925,7 @@ section,
 
 .section-title p .description-title {
   color: var(--accent-color); 
+  font-style: italic;
 }
 
 
@@ -891,7 +949,7 @@ section,
   display: flex;
   align-items: center;
   /* background: url("../img/hero-bg.jpg") top left; */
-  background-color: #0C008F;
+  background-color: var(--accent-color);
   background-size: cover;
 }
 
@@ -912,14 +970,15 @@ section,
 .hero h1 {
   margin: 0;
   line-height: 120%;
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 56px;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 60px;
   color: #FFFFFF;
 }
 
 .hero h1 span {
   color: #B5E742; /* var(--accent-color); */
+  font-style: italic;
 }
 
 .hero p {
@@ -931,8 +990,8 @@ section,
 }
 
 .hero .btn-get-started {
-  color: #0C008F; /* var(--contrast-color); */
-  background: #B5E742; /* var(--accent-color); */
+  color: var(--accent-color); 
+  background: var(--accent-light-color); 
   font-family: var(--heading-font);
   font-weight: 700;
   font-size: 16px;
@@ -944,9 +1003,9 @@ section,
   box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-color), transparent 80%);
 }
 
-.hero .btn-get-started:hover {
-  color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+.hero .btn-get-started:hover { /* VER */
+  color: var(--accent-color);
+  background: var(--accent-light-pastel-color);
   box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-color), transparent 55%);
 }
 
@@ -1075,6 +1134,11 @@ section,
 .about {
   --background-color: color-mix(in srgb, var(--accent-color), transparent 96%);
 }
+
+.about  .img-fluid{
+  padding: 10%; 
+}
+
 
 .about .about-content h3 {
   font-weight: 700;
@@ -1519,6 +1583,8 @@ section,
 .team .team-member .member-img {
   position: relative;
   overflow: hidden;
+  background-color: var(--accent-color);
+  border-radius: 30px;
 }
 
 .team .team-member .social {
@@ -1593,7 +1659,7 @@ section,
 --------------------------------------------------------------*/
 
 #pricing {
-  background-color: #0C008F;
+  background-color: var(--accent-color);
 }
 
 
@@ -1611,9 +1677,10 @@ section,
   font-weight: 400;
   margin: -20px -20px 20px -20px;
   padding: 20px 15px;
-  font-size: 16px;
+  font-size: 24px;
+  font-style: italic;
   font-weight: 600;
-  color: B5E742 color-mix(in srgb, var(--default-color), transparent 20%);
+  color: var(--default-color);
   background: color-mix(in srgb, var(--default-color), transparent 95%);
 }
 
@@ -1635,16 +1702,24 @@ section,
   font-weight: 300;
 }
 
+.pricing .pricing-item p {
+  font-size: 16px;
+}
+
 .pricing .pricing-item ul {
-  padding: 15px 0;
+  padding: 0px 0;
   list-style: none;
-  text-align: center;
+  text-align: left;
   line-height: 20px;
   font-size: 14px;
 }
 
+.pricing .pricing-item h4 {
+  text-align: left;
+}
+
 .pricing .pricing-item ul li {
-  padding-bottom: 16px;
+  padding-bottom: 5px;
 }
 
 .pricing .pricing-item ul i {
@@ -1679,12 +1754,30 @@ section,
   transition: 0.3s;
 }
 
+.pricing .important{
+  background: var(--accent-light-color);
+  color: var(--accent-color);
+  display: inline-block;
+  padding: 8px 35px 10px 35px;
+  border-radius: 4px;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pricing .important:hover{
+  background: color-mix(in srgb, var(--accent-light-color), transparent 20%);
+}
+
 .pricing .btn-buy:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
 .pricing .featured h3 {
-  background: var(--accent-light-color);
+  background: var(--accent-pastel-color);
   color: var(--accent-color);
 }
 
