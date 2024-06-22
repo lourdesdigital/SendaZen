@@ -93,7 +93,7 @@
 
 /*INICIO Clients-container */
 .square {
-  background-color: var(--accent-light-color);
+  background-color: var(--accent-light-2-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,11 +115,13 @@
 
 .circle {
   border-radius: 50%;
-  background-color: red;
   width: 40px;
   height: 40px;
   position: absolute;
   top: 0;
+  background-size: cover; /* Ajusta la imagen para que cubra el área sin cambiar de proporción */
+  background-position: center; /* Centra la imagen dentro del contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
 .circle:nth-child(1) { left: 0; }
@@ -162,7 +164,13 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
+h1 {
+  color: var(--accent-light-pastel-color);
+  font-family: var(--font-bold);
+  font-weight: 700;
+  font-style: normal;
+}
+
 h2,
 h3,
 h4,
@@ -255,7 +263,7 @@ h6 {
 }
 
 .header .logo span {
-  color: var(--accent-color);
+  color: var(--accent-light-pastel-color);
   font-size: 30px;
   font-weight: 700;
 }
@@ -977,7 +985,8 @@ section,
 }
 
 .hero h1 span {
-  color: #B5E742; /* var(--accent-color); */
+  color: var(--accent-light-color); 
+  line-height: 120%;
   font-style: italic;
 }
 
@@ -1273,6 +1282,7 @@ section,
 .clients {
   --background-color: color-mix(in srgb, var(--accent-color), transparent 96%);
   padding: 25px 0;
+
 }
 
 .clients .swiper {
@@ -1282,15 +1292,13 @@ section,
 .clients .swiper-wrapper {
   height: auto;
 }
-
 .clients .swiper-slide img {
   transition: 0.3s;
 }
 
-.clients .swiper-slide img:hover {
+.clients .f img:hover {
   transform: scale(1.1);
-}
-
+} 
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -1380,7 +1388,6 @@ section,
 .testimonials .testimonials-slider {
   overflow: hidden;
 }
-
 .testimonials .testimonial-item {
   text-align: center;
 }
@@ -1439,18 +1446,29 @@ section,
   margin: 0 auto 15px auto;
 }
 
-.testimonials .swiper-wrapper {
-  height: auto;
+/*
+.swiper-wrapper .swiper-slide {
+  height: 75px;
 }
 
+.swiper-wrapper .swiper-slide .img-fluid{
+  height: 75px;
+  width: auto;
+  object-fit: contain; 
+}
+ */
+
+ .testimonials .swiper-wrapper {
+  height: auto;}
+  
 .testimonials .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  width: 12px; 
+  height: 12px; 
   background-color: color-mix(in srgb, var(--default-color), transparent 50%);
   opacity: 0.5;
 }
