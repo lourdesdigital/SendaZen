@@ -148,6 +148,20 @@
 /*FIN Icons */
 
 
+
+
+
+
+
+.col-lg-6 .d-flex .flex-column .justify-content-center{
+  margin-right: 20px;
+}
+
+
+
+
+
+
 body {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -986,7 +1000,7 @@ section,
 }
 
 .hero h1 span {
-  color: var(--accent-light-color); 
+  color: var(--accent-light-2-color); 
   line-height: 120%;
   font-style: italic;
 }
@@ -1701,8 +1715,10 @@ section,
   font-style: italic;
   font-weight: 600;
   color: var(--default-color);
-  background: color-mix(in srgb, var(--default-color), transparent 95%);
+  background: var(--accent-light-2-color); /* color-mix(in srgb, var(--default-color), transparent 95%); */
 }
+
+
 
 .pricing .pricing-item h4 {
   font-size: 36px;
@@ -1717,8 +1733,27 @@ section,
 }
 
 .pricing .pricing-item h4 span {
-  color: color-mix(in srgb, var(--default-color), transparent 40%); 
+  color: color-mix(in srgb, var(--default-color), transparent 0%); 
   font-size: 16px;
+  font-weight: 300;
+}
+
+.featured .warranty{
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  text-align: center; 
+  align-items: center;
+  margin-top: 12px;
+}
+
+.featured .warranty span{
+  margin-right: 6px;
+}
+
+.pricing .pricing-item .warranty{
+  color: color-mix(in srgb, var(--default-color), transparent 10%); 
+  font-size: 14px;
   font-weight: 300;
 }
 
@@ -1742,6 +1777,10 @@ section,
   padding-bottom: 5px;
 }
 
+.pricing .pricing-item ul li span{
+  margin-right: 5px;
+}
+
 .pricing .pricing-item ul i {
   color: var(--accent-color);
   font-size: 18px;
@@ -1761,8 +1800,8 @@ section,
 }
 
 .pricing .btn-buy {
-  background: var(--accent-color);
-  color: #ffffff;
+  background: var(--accent-light-2-color); /* var(--accent-color); */
+  color: #000000;
   display: inline-block;
   padding: 8px 35px 10px 35px;
   border-radius: 10px;
@@ -1793,7 +1832,7 @@ section,
 }
 
 .pricing .btn-buy:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: color-mix(in srgb, var(--accent-light-2-color), transparent 20%);
 }
 
 .pricing .featured h3 {
@@ -1802,7 +1841,7 @@ section,
 }
 
 .pricing .advanced {
-  background: var(--accent-light-color);
+  background: #ffffff;
   color: #000000;
   width: 200px;
   position: absolute;
