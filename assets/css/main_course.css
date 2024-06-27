@@ -60,7 +60,8 @@
   --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
   
   --accent-dark-color-1: #8D88F7; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
- 
+  --accent-dark-color-2: #F27F48; 
+
   --accent-light-color-1: #C0DF77;
   --accent-light-color-2: #FEEF78;
   --accent-pastel-color: #CCBDF4;
@@ -99,11 +100,11 @@
 
 /*INICIO Clients-container */
 .square {
-  background-color: #FFFFFF;
+  background-color:  var(--accent-light-color-2);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent-dark-color-1);
+  color: var(--heading-color);
   font-size: 12px;
   font-weight: bold;
   border-radius: 20px;
@@ -919,7 +920,6 @@ section,
   padding-bottom: 60px;
   position: relative;
   line-height: 220%;
-  
 }
 
 .section-title h2 {
@@ -938,7 +938,7 @@ section,
 }
 
 .section-title p {
-  /*  color: var(--heading-color);;/*  /* var(--heading-color); */  
+  /*  color: #000000;/*  /* var(--heading-color); */  
   margin: 10px 0 0 0;
   font-size: 32px;
   font-weight: 700;
@@ -947,7 +947,7 @@ section,
 }
 
 .section-title p span{
-  color: var(--heading-color); 
+  color: var(--heading-color);
 }
 
 .section-title p .description-title {
@@ -957,13 +957,20 @@ section,
 
 
 .primaryContent p span{
-  color: #FFFFFF;  
+  color: var(--contrast-color);  
 }
  
 .primaryContent p .description-title {
   color: var(--accent-light-color-1);
 }
 
+.primaryContentCupon p span{
+  color: var(--heading-color);  
+}
+ 
+.primaryContentCupon p .description-title {
+  color: var(--accent-dark-color-2);
+}
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -976,7 +983,7 @@ section,
   display: flex;
   align-items: center;
   /* background: url("../img/hero-bg.jpg") top left; */
-  background-color: var(--accent-dark-color-1);
+  background-color: var(---background-color); 
   background-size: cover;
 }
 
@@ -1000,17 +1007,17 @@ section,
   font-size: 70px;
   font-weight: 600;
   line-height: 60px;
-  color: #FFFFFF;
+  color:var(--accent-dark-color-1);
 }
 
 .hero h1 span {
-  color: var(--accent-light-color-2); 
+  color: var(--accent-light-color-1); 
   line-height: 120%;
   font-style: italic;
 }
 
 .hero p {
-  color: #FFFFFF;
+  color: var(--heading-color);
   line-height: 120%;
   margin: 5px 0 30px 0;
   font-size: 20px;
@@ -1018,7 +1025,21 @@ section,
 }
 
 .hero .btn-get-started {
-  color:  var(--heading-color);
+  color: var(--heading-color);
+  background: var(--accent-light-color-1); 
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-dark-color-1), transparent 80%);
+}
+
+.about-content .btn-get-started {
+  color: var(--heading-color);
   background: var(--accent-light-color-1); 
   font-family: var(--heading-font);
   font-weight: 700;
@@ -1032,6 +1053,12 @@ section,
 }
 
 .hero .btn-get-started:hover { /* VER */
+  
+  background: var(--accent-light-color-2);
+  box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-dark-color-1), transparent 55%);
+}
+
+.about-content .btn-get-started:hover { /* VER */
   
   background: var(--accent-light-color-2);
   box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-dark-color-1), transparent 55%);
@@ -1133,7 +1160,7 @@ section,
 }
 
 .featured-services .service-item h4 a {
-  color: var(--heading-color);
+  color: var(--accent-dark-color-1);
   transition: ease-in-out 0.3s;
 }
 
@@ -1275,25 +1302,35 @@ section,
 .stats .stats-item {
   background-color: color-mix(in srgb, var(--accent-dark-color-1), transparent 95%);
   margin-top: -32px;
-  padding: 40px 30px 35px 30px;
+  padding: 10px 10px 10px 10px;
   width: 100%;
   position: relative;
   text-align: center;
   border-radius: 4px;
   z-index: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .stats .stats-item span {
-  font-size: 36px;
+  font-size: 28px;
   display: block;
   font-weight: 700;
+  align-items: center;
+}
+
+.stats-item-subtitle {
+  padding-top: 10px;
 }
 
 .stats .stats-item p {
-  padding: 0;
   margin: 0;
   font-family: var(--heading-font);
-  font-size: 16px;
+  font-size: 28px;
+  font-weight: 700;
+  margin-left: 10px;
+  align-items: center;
 }
 
 /*--------------------------------------------------------------
@@ -1374,16 +1411,16 @@ section,
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials {
-  --default-color: #ffffff;
-  --background-color: var(--heading-color);;
-  --heading-color: #ffffff;
+  --default-color: var(--contrast-color);
+  --background-color:var(--accent-dark-color-1);
+  --heading-color: var(--contrast-color);
   padding: 80px 0;
   position: relative;
 }
 
 .testimonials:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  background: color-mix(in srgb, color-mix(in srgb, var(--background-color), transparent 15%), black 30%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1693,6 +1730,76 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Certification Section
+--------------------------------------------------------------*/
+
+#certification {
+  background-color: var(--contrast-color);
+}
+
+.certification .fst-italic{
+  font-size: 16px;
+  color: var(--heading-color);
+  font-size: 18px; 
+  line-height: 120%; 
+  font-style: normal;
+  font-weight: regular; 
+  font-family: var(--font-regular);
+  font-weight: 300;
+}
+
+.certification .btn-wrap {
+  /*background: color-mix(in srgb, var(--default-color), transparent 95%);*/
+  margin: 0 -20px -20px -20px;
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.certification .btn-buy {
+  background: var(--accent-light-color-2); /* var(--accent-dark-color-1); */
+  color: var(--heading-color);;
+  display: inline-block;
+  padding: 8px 35px 10px 35px;
+  border-radius: 10px;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+
+.certification .important{
+  background: var(--accent-light-color-1);
+  color: var(--heading-color);
+  display: inline-block;
+  padding: 8px 35px 10px 35px;
+  border-radius: 10px;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.certification .important:hover{
+  background: color-mix(in srgb, var(--accent-light-color-1), transparent 20%);
+}
+
+.certification .btn-buy:hover {
+  background: color-mix(in srgb, var(--accent-light-color-2), transparent 20%);
+}
+
+.wineers {
+  background: url("../img/objets.png");
+  background-size: cover; /* O usar 100% auto */
+  width: 100%; /* Asegura que la sección ocupe el ancho completo */
+  height: auto; /* Ajusta la altura según el contenido */
+}
+
+/*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
 
@@ -1819,7 +1926,7 @@ section,
 
 .pricing .important{
   background: var(--accent-light-color-1);
-  color: var(--heading-color);;
+  color: var(--heading-color);
   display: inline-block;
   padding: 8px 35px 10px 35px;
   border-radius: 10px;
@@ -1841,12 +1948,12 @@ section,
 
 .pricing .featured h3 {
   background: var(--accent-light-color-2);
-  color: var(--heading-color);;
+  color: var(--heading-color);
 }
 
 .pricing .advanced {
   background: #ffffff;
-  color: var(--heading-color);;
+  color:var(--heading-color);
   width: 200px;
   position: absolute;
   top: 18px;
@@ -2224,6 +2331,83 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
+
+
+
+
+
+
+
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#headline {
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #1a1b21;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  color: #aaa;
+  word-spacing: 5px;
+  text-align: left;
+}
+
+.grid-cards {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  padding-top: 5px;
+}
+
+.row-cards {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-right: 5px;
+  border: 0px solid #1a1b21;
+  border-radius: 5px;
+  width: 120px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: .8em;
+  color: #aaa;
+  text-align: center;
+  transition: background-color .25s ease-in-out;
+}
+
+.row-cards img {
+  padding-bottom: 5px;
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+.row-cards:Hover {
+  background-color: #1a1b21;
+  cursor: pointer;
+}
+
+#urchoice {
+  margin: 60px;
+}
+
+#urchoice input {
+  width: 200px;
+  line-height: 50px;
+  font-size: 1em;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #1a1b21;
+  background-color: #1a1b21;
+  color: #aaa;
+}
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
