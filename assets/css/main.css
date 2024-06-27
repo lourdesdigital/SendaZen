@@ -59,7 +59,7 @@
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
   
-  --accent-dark-color-1: #8D88F7; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-dark-color-1: #a39efe;  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
  
   --accent-light-color-1: #C0DF77;
   --accent-light-color-2: #FEEF78;
@@ -68,9 +68,9 @@
 
   /* FONDOS */ 
 
-  --background-light-color-1: #B3DAAB;
+  --background-light-color-1: #C0DF77; 
 
-  --background-important-color: #8D88F7;
+  --background-important-color: #a39efe;
   --background-dark-color-1: #FFB28C;
 
   --contrast-color: #ffffff; /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
@@ -94,7 +94,12 @@
 # General
 --------------------------------------------------------------*/
 
-
+.section-white{
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
 
 /*INICIO Clients-container */
