@@ -2003,7 +2003,7 @@ section,
 }
 
 .faq .faq-container .faq-item h3:hover {
-  color: var(--accent-dark-color-1);
+  color: var(--contrast-color);
 }
 
 .faq .faq-container .faq-item .faq-content {
