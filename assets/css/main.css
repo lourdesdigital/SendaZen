@@ -95,7 +95,7 @@
 --------------------------------------------------------------*/
 
 .section-white{
-  background-color: #FFFFFF;
+  background-color: #FFFFFF;  
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   padding-left: 50px;
@@ -1173,7 +1173,8 @@ section,
   padding: 10%; 
 }
 
-.section, .section .about {
+/* .section, .section */
+.sin-borde{
   padding-bottom: 0%;
   margin-bottom: 0%;
 }
