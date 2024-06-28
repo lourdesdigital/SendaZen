@@ -212,7 +212,7 @@ h6 {
 }
 
 .header .topbar {
-  background-color: #F27F48;
+  background-color: var(--heading-color);
   height: 40px;
   padding: 0;
   font-size: 14px;
