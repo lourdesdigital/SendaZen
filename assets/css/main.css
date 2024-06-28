@@ -1166,7 +1166,10 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about {
-  --background-color: color-mix(in srgb, var(--accent-dark-color-1), transparent 96%);
+ /* --background-color: color-mix(in srgb, var(--accent-dark-color-1), transparent 96%); */
+ background: linear-gradient(to bottom, 
+  color-mix(in srgb, var(--accent-dark-color-1), transparent 96%) 0%, 
+  color-mix(in srgb, var(--accent-dark-color-1), transparent 96%) 60%,   white 100%);
 }
 
 .about  .img-fluid{
