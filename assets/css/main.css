@@ -2437,6 +2437,28 @@ section,
   animation-delay: -12.8s; /* Añadir la propiedad estándar */
 }
 
+.imagen-centro{
+  height: 100%;
+}
+
+.div-centro{
+  align-content: center;
+  align-items: center;
+}
+
+.list-centro ul{
+  list-style-type: none;
+  color: #ffffff;
+}
+
+.list-centro hr {
+  /* border: 2px solid var(--contrast-color); */ /* Elimina el estilo por defecto */
+ /* border-top: 2px solid var(--contrast-color);  */  /* Agrega una línea superior */
+  height: 2px;
+  color: #ffffff;
+  background-color:#ffffff;
+  margin: 10px 0; /* Ajusta el margen */
+}
 
 /*--------------------------------------------------------------
 # Starter Section Section
