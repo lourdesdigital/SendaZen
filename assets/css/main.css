@@ -54,26 +54,30 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #FFFFFF;  /* Background color for the entire website, including individual sections */
 
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
   
-  --accent-dark-color-1: #a39efe;  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-dark-color-1: #640BD5;  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
  
   --accent-light-color-1: #C0DF77;
-  --accent-light-color-2: #FEEF78;
-  --accent-pastel-color: #a39efe; 
+  --accent-light-color-2: #640BD5;
   --accent-pastel-2-color: #FBB9F4;
+
+  --accent-light-color: #A794E6;
+
+  --gradient-color: #640BD5; /* linear-gradient(240deg, #97e7d1 0%, #ecfcc3 100%); */
+  --gradient-color-2:  #4702a1; /*linear-gradient(240deg, #e5a243ab 0%, #f7f7aa 90%); */
 
   /* FONDOS */ 
 
   --background-light-color-1: #C0DF77; 
 
-  --background-important-color: #a39efe;
+  --background-important-color: #C0DF77; /* #F4EDE3; */
   --background-dark-color-1: #FFB28C;
 
-  --contrast-color: #ffffff; /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
+  --contrast-color: #FFFFFF;  /* The contrast color is used for elements when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -82,7 +86,7 @@
   --nav-hover-color: #C0DF77; /* Applied to main navmenu links when they are hovered over or active */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #222222; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #8052C9; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #640BD5; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Smooth scroll */
@@ -100,16 +104,18 @@
   border-top-left-radius: 20px;
   padding-left: 50px;
   padding-right: 50px;
+  padding-bottom: 0%; 
+  margin-bottom: 0%;
 }
 
 
 /*INICIO Clients-container */
 .square {
-  background-color: #FFFFFF;
+  background-color: var(--heading-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent-dark-color-1);
+  color: var(--contrast-color);
   font-size: 12px;
   font-weight: bold;
   border-radius: 20px;
@@ -217,7 +223,7 @@ h6 {
 }
 
 .header .topbar {
-  background-color: var(-background-important-color);
+  background-color: var(--heading-color);
   height: 40px;
   padding: 0;
   font-size: 14px;
@@ -319,7 +325,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: #FFFFFF; /* var(--nav-color); */
+    color: var(--heading-color);
     padding: 18px 15px;
     font-size: 15px;
     font-family: var(--nav-font);
@@ -346,7 +352,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color); 
+    color: var(--accent-light-color-2); 
   }
 
   .navmenu .dropdown ul {
@@ -982,7 +988,7 @@ section,
   display: flex;
   align-items: center;
   /* background: url("../img/hero-bg.jpg") top left; */
-  background-color: var(--accent-dark-color-1);
+  background-color: var(--background-important-color);
   background-size: cover;
 }
 
@@ -1006,7 +1012,7 @@ section,
   font-size: 70px;
   font-weight: 600;
   line-height: 60px;
-  color: #FFFFFF;
+  color: var(--heading-color)
 }
 
 .hero h1 span {
@@ -1016,7 +1022,7 @@ section,
 }
 
 .hero p {
-  color: #FFFFFF;
+  color: var(--heading-color);
   line-height: 120%;
   margin: 5px 0 30px 0;
   font-size: 20px;
@@ -1024,23 +1030,24 @@ section,
 }
 
 .hero .btn-get-started {
-  color:  var(--heading-color);
-  background: var(--accent-light-color-1); 
+  color:   var(--contrast-color);
+
   font-family: var(--heading-font);
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 30px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   transition: 0.5s;
   box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-dark-color-1), transparent 80%);
+  background: var(--gradient-color);                                                             /* NEW */                                                /* NEW */
+  clip-path: polygon(10% 0%, 100% 0, 100% 50%, 90% 100%, 0 100%, 0% 50%);                        /* NEW */
 }
 
 .hero .btn-get-started:hover { /* VER */
-  
-  background: var(--accent-light-color-2);
-  box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-dark-color-1), transparent 55%);
+  background: var(--gradient-color-2);                                                           /* NEW */
+  box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-dark-color-1), transparent 55%);        /* NEW */
 }
 
 .hero .btn-watch-video {
@@ -1165,12 +1172,11 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+/*
 .about {
- /* --background-color: color-mix(in srgb, var(--accent-dark-color-1), transparent 96%); */
- background: linear-gradient(to bottom, 
-  color-mix(in srgb, var(--accent-dark-color-1), transparent 96%) 0%, 
-  color-mix(in srgb, var(--accent-dark-color-1), transparent 96%) 60%,   white 100%);
+ background: var(--contrast-color);
 }
+*/
 
 .about  .img-fluid{
   padding: 10%; 
@@ -1180,6 +1186,13 @@ section,
 .sin-margen{
   padding-bottom: 0%;
   margin-bottom: 0%;
+
+  background-color: var(--accent-light-color-1);
+  /*background-image: url('https://i.ibb.co/hM6VQv7/Background-01.jpg');*/
+  /*background-image: url('/assets/img/backgrounds/Background-01.png');  */
+  background-position: center bottom;
+  background-size: cover; 
+  background-repeat: no-repeat;
 }
 
 .about .about-content h3 {
@@ -1520,6 +1533,8 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+
+
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -1710,7 +1725,7 @@ section,
 --------------------------------------------------------------*/
 
 #pricing {
-  background-color: var(--accent-dark-color-1);
+  background-color: var(--accent-light-color);
 }
 
 
@@ -1732,7 +1747,7 @@ section,
   font-style: italic;
   font-weight: 600;
   color: var(--default-color);
-  background: var(--accent-light-color-2); /* color-mix(in srgb, var(--default-color), transparent 95%); */
+  background: var(--accent-light-color); /* color-mix(in srgb, var(--default-color), transparent 95%); */
 }
 
 
@@ -1818,10 +1833,11 @@ section,
 
 .pricing .btn-buy {
   background: var(--accent-light-color-2); /* var(--accent-dark-color-1); */
-  color: var(--heading-color);;
+  color: var(--contrast-color);;
   display: inline-block;
   padding: 8px 35px 10px 35px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  clip-path: polygon(10% 0%, 100% 0, 100% 50%, 90% 100%, 0 100%, 0% 50%);                        /* NEW */
   transition: none;
   font-size: 14px;
   font-weight: 400;
@@ -1835,7 +1851,8 @@ section,
   color: var(--heading-color);;
   display: inline-block;
   padding: 8px 35px 10px 35px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  clip-path: polygon(10% 0%, 100% 0, 100% 50%, 90% 100%, 0 100%, 0% 50%);                        /* NEW */
   transition: none;
   font-size: 14px;
   font-weight: 400;
@@ -1854,8 +1871,9 @@ section,
 
 .pricing .featured h3 {
   background: var(--accent-light-color-2);
-  color: var(--heading-color);;
+  color: var(--contrast-color);;
 }
+
 
 .pricing .advanced {
   background: #ffffff;
@@ -2236,6 +2254,189 @@ section,
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
+
+/*--------------------------------------------------------------
+# Carrousel-animation
+--------------------------------------------------------------*/
+
+.carrousel-animation {
+  align-items: center;
+  align-content: center;
+  -webkit-perspective: 500px;
+  -moz-perspective: 500px;
+  perspective: 500px; /* Añadir la propiedad estándar */
+  width: 60vw;
+  height: 35vh;
+  top: 5vh;
+  position: relative;
+  margin: 0 auto;
+  
+}
+
+@-webkit-keyframes carrousel-animation {
+  from {
+    -webkit-transform: rotateY(360deg) translateZ(200px) rotateY(-360deg);
+    z-index: 10;
+    opacity: 1;
+  }
+  50% {
+    z-index: -10;
+  }
+  to {
+    -webkit-transform: rotateY(0deg) translateZ(200px) rotateY(0deg);
+    z-index: 10;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes carrousel-animation {
+  from {
+    -moz-transform: rotateY(360deg) translateZ(200px) rotateY(-360deg);
+    z-index: 10;
+    opacity: 1;
+  }
+  50% {
+    z-index: -10;
+  }
+  to {
+    -moz-transform: rotateY(0deg) translateZ(200px) rotateY(0deg);
+    z-index: 10;
+    opacity: 1;
+  }
+}
+
+@keyframes carrousel-animation {
+  from {
+    transform: rotateY(360deg) translateZ(200px) rotateY(-360deg);
+    z-index: 10;
+    opacity: 1;
+  }
+  50% {
+    z-index: -10;
+  }
+  to {
+    transform: rotateY(0deg) translateZ(200px) rotateY(0deg);
+    z-index: 10;
+    opacity: 1;
+  }
+}
+
+.card {
+  width: 160px; /* 12vw; */
+  height: 275px; /* 20vh; */
+  font-size: 8vh;
+  opacity: 1;
+  position: absolute;
+  top: -2vh; 
+  left: calc(50% - 5vw); /* Ajusta la posición para centrar las tarjetas */
+  /* border: solid darkgray 2px; */
+  border-radius: 0px;
+  border-style: none;
+  background-color:transparent;
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, .2); */
+  text-align: center;
+  -webkit-animation-name: carrousel-animation;
+  -moz-animation-name: carrousel-animation;
+  animation-name: carrousel-animation; /* Añadir la propiedad estándar */
+  -webkit-animation-duration: 16s; /* Duración aumentada */
+  -moz-animation-duration: 16s; /* Duración aumentada */
+  animation-duration: 16s; /* Añadir la propiedad estándar */
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; /* Añadir la propiedad estándar */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear; /* Añadir la propiedad estándar */
+}
+
+/* MOBILE */
+
+@media (max-width: 1199px) {
+
+  .card {
+    top: 10vh;
+    width: 100px; /* 12vw; */
+    height: 185px; /* 20vh; */
+  }
+
+  .carrousel-animation {
+
+  align-items: center;
+  align-content: center;
+  -webkit-perspective: 500px;
+  -moz-perspective: 500px;
+  perspective: 500px; /* Añadir la propiedad estándar */
+  width: 30vw;
+  height: 40vh;
+  margin: 50px;
+  top: 5vh;
+  }
+
+  #c3 {
+    background-image: url('/assets/img/01.jpg');
+    -webkit-animation-delay: -3.2s; /* Aumentado para mantener el ritmo con la nueva duración */
+    -moz-animation-delay: -3.2s; /* Aumentado para mantener el ritmo con la nueva duración */
+    animation-delay: -3.2s; /* Añadir la propiedad estándar */
+    
+  }
+
+  #c2 {
+    background-image: url('/assets/img/02.jpg');
+    -webkit-animation-delay: -6.4s; /* Aumentado para mantener el ritmo con la nueva duración */
+    -moz-animation-delay: -6.4s; /* Aumentado para mantener el ritmo con la nueva duración */
+    animation-delay: -6.4s; /* Añadir la propiedad estándar */
+  }
+
+  #c1 {
+    background-image: url('/assets/img/03.jpg');
+    -webkit-animation-delay: -9.6s; /* Aumentado para mantener el ritmo con la nueva duración */
+    -moz-animation-delay: -9.6s; /* Aumentado para mantener el ritmo con la nueva duración */
+    animation-delay: -9.6s; /* Añadir la propiedad estándar */
+  }
+
+  #c0 {
+    background-image: url('/assets/img/04.jpg');
+    -webkit-animation-delay: -12.8s; /* Aumentado para mantener el ritmo con la nueva duración */
+    -moz-animation-delay: -12.8s; /* Aumentado para mantener el ritmo con la nueva duración */
+    animation-delay: -12.8s; /* Añadir la propiedad estándar */
+  }
+
+}
+
+/* FIN MOBILE */
+
+#c4 {
+  background-image: url(http://lorempixel.com/g/100/160/people/5);
+}
+
+#c3 {
+  background-image: url('/assets/img/04.jpg');
+  -webkit-animation-delay: -3.2s; /* Aumentado para mantener el ritmo con la nueva duración */
+  -moz-animation-delay: -3.2s; /* Aumentado para mantener el ritmo con la nueva duración */
+  animation-delay: -3.2s; /* Añadir la propiedad estándar */
+}
+
+#c2 {
+  background-image: url('/assets/img/03.jpg');
+  -webkit-animation-delay: -6.4s; /* Aumentado para mantener el ritmo con la nueva duración */
+  -moz-animation-delay: -6.4s; /* Aumentado para mantener el ritmo con la nueva duración */
+  animation-delay: -6.4s; /* Añadir la propiedad estándar */
+}
+
+#c1 {
+  background-image: url('/assets/img/02.jpg');
+  -webkit-animation-delay: -9.6s; /* Aumentado para mantener el ritmo con la nueva duración */
+  -moz-animation-delay: -9.6s; /* Aumentado para mantener el ritmo con la nueva duración */
+  animation-delay: -9.6s; /* Añadir la propiedad estándar */
+}
+
+#c0 {
+  background-image: url('/assets/img/01.jpg');
+  -webkit-animation-delay: -12.8s; /* Aumentado para mantener el ritmo con la nueva duración */
+  -moz-animation-delay: -12.8s; /* Aumentado para mantener el ritmo con la nueva duración */
+  animation-delay: -12.8s; /* Añadir la propiedad estándar */
+}
+
 
 /*--------------------------------------------------------------
 # Starter Section Section

@@ -67,7 +67,7 @@
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
           <!-- <h1 class="sitename">BizLand</h1> -->
-          <img class="sitename" src="assets/img/Logo.svg" alt="">
+          <img class="sitename" src="assets/img/Logo-2.png" alt="">
           <!-- <span>.</span> -->
         </a>
 
@@ -119,8 +119,8 @@
             <h1>Despertá tu <span>#potencial</span></h1>
             <br>
             <p>Descubre un espacio donde tu cuerpo y mente encuentran equilibrio. ¡Únete a nuestros cursos guiados por expertos y consigue la motivación y el conocimiento que necesitas para alcanzar tus metas!</p>
-            <div class="d-flex">
-              <a href="#about" class="btn-get-started">Obtén tu clase gratuita</a>
+            <div class="d-flex btn-get-started-border">
+              <a href="#about" class="btn-get-started">Obtén tu clase gratuita <i class="bi bi-arrow-up-right icon"></i></a>
               
               <!--
               <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
@@ -139,8 +139,21 @@
 
 
           </div>
-          <div class="col-lg-7 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-            <img  src="assets/img/img-banner.png" alt="">
+          <div class="col-lg-7 order-2 order-lg-1 d-flex" data-aos="zoom-out" style="margin: 0px; padding: 0px; display: flex;
+          align-items: center; justify-content: center;">
+            <!-- <img  src="assets/img/img-banner.png" alt="">-->
+
+            <div class="carrousel-animation">
+              <div style="background-image: url('assets/img/cards/card-01.png'); background-size: cover; background-position: center; background-position: center center; background-repeat: no-repeat;" class="card" id="c0"></div>
+              <div style="background-image: url('assets/img/cards/card-02.png'); background-size: cover; background-position: center; background-position: center center; background-repeat: no-repeat;" class="card" id="c1"></div>
+              <div style="background-image: url('assets/img/cards/card-03.png'); background-size: cover; background-position: center; background-position: center center; background-repeat: no-repeat;" class="card" id="c2"></div>
+              <div style="background-image: url('assets/img/cards/card-04.png'); background-size: cover; background-position: center; background-position: center center; background-repeat: no-repeat;" class="card" id="c3"></div>
+              <div style="background-image: url('assets/img/cards/card-05.png'); background-size: cover; background-position: center; background-position: center center; background-repeat: no-repeat;" class="card" id="c4"></div>
+              <!-- <div style="background-image: url('assets/img/cards/card-06.png'); background-size: cover; background-position: center; background-position: center center; background-repeat: no-repeat;" class="card" id="c5"></div> -->
+              <!-- <div style="background-image: url('assets/img/cards/card-01.png');" class="card" id="c6"></div> -->
+              <!-- <div style="background-image: url('assets/img/cards/card-01.png');" class="card" id="c7"></div> -->
+            </div>
+            
           </div>
         </div>
       </div>
@@ -149,13 +162,16 @@
 
 
     <!-- About Section -->
-    <section id="about" class="about section sin-margen" style="background-color: var(--background-important-color);">
+    <section id="about" class="about section sin-margen">
 
 
       <!-- Quotes img -->
+<!--
       <div class="container section-title" data-aos="fade-up">
         <img style="padding: 0%; margin: 0%; width: 120%;" src="assets/img/Palabras.png" alt="" class="img-fluid">
-      </div><!-- Quotes img -->
+      </div>
+-->      
+      <!-- Quotes img -->
 
               <!-- Clients Section -->
  
@@ -222,36 +238,39 @@
       </div>--><!-- End Section Title -->
 
       <div class="container" >
-
-        <div class="row gy-3 section-white" >
+        <div class="row gy-3 section-white">
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100" >
             <img style="padding: 10%;" src="assets/img/about.png" alt="" class="img-fluid">
           </div>
 
 
-          <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200"  style="margin-top: 2%; margin-bottom: 2%;">
             <div class="about-content ps-0 ps-lg-3">
 
 
               <!-- Section Title -->
               <div style="margin: 0%; padding: 0%;" class="container section-title" data-aos="fade-up">
+                <br>
               <p  style="text-align: left;"><span>Estamos con vos  en cada paso hacia tu </span> <span class="description-title">bienestar</span><span>.</span></p>
               </div>
               <!-- End Section Title -->
+
+
+
 
               <br>
             
               <!--<h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>  -->
               <p class="fst-italic">
-                Somos un centro de bienestar integral dedicado a mejorar tu a mejorar tu salud y calidad de vida. Ofrecemos atención física, rehabilitación, nutrición, terapia y entrenamiento en espacios holísticos.
+                Somos un centro de bienestar integral dedicado a mejorar tu salud y calidad de vida. Ofrecemos atención rehabilitación, nutrición, terapia y entrenamiento en espacios holísticos.
               </p>
               <ul>
                 <li>
                   <i class="bi bi-diagram-3"></i>
                   <div>
                     <h4>Un equipo con 15 especialidades</h4>
-                    <p>estamos aquí para cubrir todas tus necesidades. Nos destacamos por crear una comunidad de apoyo, acompañándote en cada paso de tu camino hacia una vida más saludable.</p>
+                    <p>Nos destacamos por crear una comunidad de apoyo en 15 especialidades que van a acompañarte en cada paso de tu camino hacia una vida más saludable.</p>
                   </div>
                 </li>
                 <li>
@@ -268,7 +287,9 @@
                 </strong>
               </p>
               <p style="margin: 0%; padding: 0%;">
-                <span class="material-symbols-outlined">task_alt</span> Centro físico para que vengas a entrenar
+                <span class="material-symbols-outlined">task_alt</span>
+              
+                Centro físico para que vengas a entrenar
               </p>
               <p style="margin: 0%; padding: 0%;">
               <span class="material-symbols-outlined">task_alt</span> Cursos guiados por expertos en fitness y salud
@@ -276,6 +297,7 @@
               <p style="margin: 0%; padding: 0%;">
                 <span class="material-symbols-outlined">task_alt</span> Instalaciones modernas y en constante mejora
               </p>
+              
             </div>
 
           </div>
@@ -291,6 +313,14 @@
 
       <div class="container">
 
+              <!-- Quotes img -->
+
+      <div class="container section-title" data-aos="fade-up">
+        <img style="padding: 0%; margin: 0%; width: 120%;" src="assets/img/Palabras.gif" alt="" class="img-fluid">
+      </div>
+    
+      <!-- Quotes img -->
+
         <div class="container section-title" data-aos="fade-up">
           <h2>Sobre nosotros</h2>
           <p><span>¡Conoce nuestros </span> <span class="description-title">ideales</span><span>!</span></p>
@@ -300,15 +330,21 @@
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="" class="stretched-link">Comunidad y Colaboración</a></h4>
-              <p>Fomentamos un sentido de comunidad entre nuestros clientes, creando un ambiente de apoyo y redes de colaboración.</p>
+              <div class="icon">
+                <!-- <i class="bi bi-activity icon"></i> -->
+                <img style="padding: 0%; margin: 0%; width: 75px;" src="assets/img/Icons/casa.gif" alt="">
+              </div>
+              <h4><a href="" class="stretched-link">Centro físico</a></h4>
+              <p>Contamos con un centro físico ubicado en la Provincia de Buenos Aires, que cuenta con 15 instalaciones de primera calidad, incluyendo espacios al aire libre y un comedor saludable.</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+              <div class="icon">
+                <!-- <i class="bi bi-bounding-box-circles icon"></i> -->
+                <img style="padding: 0%; margin: 0%; width: 75px;" src="assets/img/Icons/oficina-del-doctor.gif" alt="">
+              </div>
               <h4><a href="" class="stretched-link">Excelencia y Profesionalismo</a></h4>
               <p>Contamos con un equipo multidisciplinario de profesionales altamente calificados, con más de 15 especialidades a disposición.</p>
             </div>
@@ -316,7 +352,10 @@
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+              <div class="icon">
+                <!--<i class="bi bi-calendar4-week icon"></i>-->
+                <img style="padding: 0%; margin: 0%; width: 75px;" src="assets/img/Icons/tres-amigos.gif" alt="">
+              </div>
               <h4><a href="" class="stretched-link">Personalización y Empatía</a></h4>
               <p>Cada persona es única. Por eso ofrecemos programas personalizados que se adaptan a las necesidades y objetivos individuales de cada cliente</p>
             </div>
@@ -324,7 +363,10 @@
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+              <div class="icon">
+                <img style="padding: 0%; margin: 0%; width: 75px;" src="assets/img/Icons/amigo.gif" alt="">
+                <!-- <i class="bi bi-broadcast icon"></i> -->
+              </div>
               <h4><a href="" class="stretched-link">¡Para todos!</a></h4>
               <p>Nuestro centro está diseñado para personas de todas las edades. Ofrecemos programas y servicios adaptados a diferentes grupos de edad y niveles de condición física.</p>
             </div>
@@ -470,7 +512,9 @@
 
 
 <!-- Pricing Section -->
-<section id="pricing" class="pricing section">
+<section style="background-color: var(--contrast-color); margin-bottom: 0%; padding: 0%; "  >
+<section id="pricing" class="pricing section" style="border-top-right-radius: 200px; border-top-left-radius: 200px;">
+  
 
       <!-- Section Title -->
       <div class="container section-title primaryContent" data-aos="fade-up">
@@ -516,6 +560,8 @@
               <h3>TALLER INTRODUCTORIO</h3>
               <p><strong>Curso introductorio para el bienestar integral</strong><br> 3 Meses de duración | 1 encuentro semanal</p>
               <br>
+              <img src="assets/img/Prices/Card01.png" class="img-fluid" style="height: 200px;">
+              <br><br>
               <ul>
                 <li><p><strong>¿Qué está incluido?</strong></p></li>
                 <li><span class="material-symbols-outlined">task_alt</span>Introducción al Fitness y Bienestar Integral</li>
@@ -543,9 +589,11 @@
           <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="pricing-item featured">
               <span class="advanced">50% OFF</span>
-              <h3 style="background: var(--background-light-color-1); ">TALLER TOP100</h3>
+              <h3 style="background: var(--background-light-color-1); color: var(--heading-color); ">TALLER TOP100</h3>
               <p><strong>Curso presencial de fitness y bienestar integral</strong><br> 3 Meses de duración | 2 encuentros semanales</p>
               <br>
+              <img src="assets/img/Prices/Card02.png" class="img-fluid" style="height: 200px;">
+              <br><br>
               <ul >
                 <li><p><strong>¿Qué está incluido?</strong></p></li>
                 <li><span class="material-symbols-outlined">task_alt</span>Introducción al Fitness y Bienestar Integral</li>
@@ -576,6 +624,8 @@
               <h3>¡PROFESIONALIZATE!</h3>
               <p><strong>Curso de formación integral</strong><br> 6 Meses de duración | 2 encuentros semanales</p>
               <br>
+              <img src="assets/img/Prices/Card03.png" class="img-fluid" style="height: 200px;">
+              <br><br>
               <ul>
                 <li><p><strong>¿Qué está incluido?</strong></p></li>
                 <li><span class="material-symbols-outlined">task_alt</span>Introducción al Fitness y Bienestar Integral</li>
@@ -604,6 +654,7 @@
 
       </div>
 
+  </section>
 </section><!-- /Pricing Section -->
 
 
@@ -628,11 +679,11 @@
 
 
 <!-- Opinions Section -->
-<section id="about" class="about section" >
-
+<section id="about" class="about section" style="margin: 0%; padding: 0%; background-color: var(--accent-light-color)">
+  <section style="border-top-right-radius: 200px; border-top-left-radius: 200px; background-color: var(--contrast-color)"  >
       <!-- Section Title -->
        <br>
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title" data-aos="fade-up" >
         <h2>Opiniones</h2>
         <p><span>Mirá lo que </span> <span class="description-title">opinan</span><span> de nosotros.</span></p>
       </div><!-- End Section Title -->
@@ -680,6 +731,7 @@
 
       </div>
 
+  </section>
 </section><!-- /Opinions Section -->
 
 
@@ -711,95 +763,95 @@
               <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
     
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                  <img src="assets/img/Quote.png" class="img-fluid" alt="">
+                  <img src="assets/img/Gallery/center-00.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>App 1</h4>
                     <p>Lorem ipsum, dolor sit</p>
-                    <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="assets/img/Gallery/center-00.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                     <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
     
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                  <img src="assets/img/LogoMockup.png" class="img-fluid" alt="">
+                  <img src="assets/img/Gallery/center-01.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Product 1</h4>
                     <p>Lorem ipsum, dolor sit</p>
-                    <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="assets/img/Gallery/center-01.png" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                     <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
     
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                  <img src="assets/img/01.jpg" class="img-fluid" alt="">
+                  <img src="assets/img/Gallery/center-02.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Branding 1</h4>
                     <p>Lorem ipsum, dolor sit</p>
-                    <a href="assets/img/01.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="assets/img/Gallery/center-02.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                     <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
     
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                  <img src="assets/img/03.jpg" class="img-fluid" alt="">
+                  <img src="assets/img/Gallery/center-03.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>App 2</h4>
                     <p>Lorem ipsum, dolor sit</p>
-                    <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="assets/img/Gallery/center-03.png"title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                     <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
     
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                  <img src="assets/img/04.jpg" class="img-fluid" alt="">
+                  <img src="assets/img/Gallery/center-04.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Product 2</h4>
                     <p>Lorem ipsum, dolor sit</p>
-                    <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="assets/img/Gallery/center-04.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                     <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
-    <!--
+    
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                  <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
+                  <img src="assets/img/Gallery/center-05.jpg" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Branding 2</h4>
                     <p>Lorem ipsum, dolor sit</p>
-                    <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="assets/img/Gallery/center-05.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                     <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
     
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                  <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
+                  <img src="assets/img/Gallery/center-06.png"class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>App 3</h4>
                     <p>Lorem ipsum, dolor sit</p>
-                    <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="assets/img/Gallery/center-06.png" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                     <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
     
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                  <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+                  <img src="assets/img/Gallery/center-07.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Product 3</h4>
                     <p>Lorem ipsum, dolor sit</p>
-                    <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="assets/img/Gallery/center-07.png" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                     <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
     
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                  <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+                  <img src="assets/img/Gallery/center-08.png" class="img-fluid" alt="">
                   <div class="portfolio-info">
                     <h4>Branding 3</h4>
                     <p>Lorem ipsum, dolor sit</p>
-                    <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="assets/img/Gallery/center-08.png" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                     <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                   </div>
                 </div>
-    -->
+    
               </div>
     
             </div>
