@@ -2452,6 +2452,12 @@ section,
   color: #ffffff;
 }
 
+.list-centro ul li{
+  list-style-type: none;
+  color: #ffffff;
+}
+
+
 .list-centro hr {
   /* border: 2px solid var(--contrast-color); */ /* Elimina el estilo por defecto */
  /* border-top: 2px solid var(--contrast-color);  */  /* Agrega una línea superior */
