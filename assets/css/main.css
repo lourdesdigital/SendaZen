@@ -2444,6 +2444,7 @@ section,
 .div-centro{
   align-content: center;
   align-items: center;
+  color: #ffffff;
 }
 
 .list-centro ul{
@@ -2457,8 +2458,10 @@ section,
   height: 2px;
   color: #ffffff;
   background-color:#ffffff;
+  border-color: #ffffff;
   margin: 10px 0; /* Ajusta el margen */
 }
+
 
 /*--------------------------------------------------------------
 # Starter Section Section
