@@ -1977,8 +1977,8 @@ section,
   position: relative;
   padding: 20px;
   margin-bottom: 15px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  border-radius: 5px;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 0%);
+  /* border-radius: 5px; */
   overflow: hidden;
 }
 
@@ -2053,6 +2053,28 @@ section,
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
   color: var(--accent-dark-color-1);
+}
+
+/*--------------------------------------------------------------
+# faq-toggle bi bi-chevron-down
+--------------------------------------------------------------*/
+.faq .faq-container .faq-item .bi-chevron-down{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  line-height: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.faq .faq-container .faq-item .bi-chevron-down:hover {
+  color: var(--accent-dark-color-1);
+}
+
+.faq .faq-container .faq-active .bi-chevron-down{
+  transform: rotate(180deg);
+  color: var(--contrast-color);
 }
 
 /*--------------------------------------------------------------
