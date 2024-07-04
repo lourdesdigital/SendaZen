@@ -62,8 +62,9 @@
   --accent-dark-color-1: #640BD5;  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
  
   --accent-light-color-1: #C0DF77;
+  --accent-light-color-1-b: #99bd46;
   --accent-light-color-2: #640BD5;
-  --accent-pastel-2-color: #FBB9F4;
+  --accent-light-color-3: #FEEF78;
 
   --accent-light-color: #A794E6;
 
@@ -941,12 +942,13 @@ section,
   font-weight: 700;
   padding: 8px 20px;
 
-  background: var(--accent-dark-color-1);
-  color:  #ffffff; /* var(--accent-dark-color-1); */
+  background: transparent;/* var(--accent-dark-color-1); */
+  color:  var(--accent-light-color-1-b);
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
   font-family: var(--default-font);
+  border: 2px solid var(--accent-light-color-1);
 }
 
 .section-title p {
@@ -1534,6 +1536,10 @@ section,
 # Portfolio Section
 --------------------------------------------------------------*/
 
+ .portfolio-item .img-fluid{
+  border-radius: 30px;
+}
+
 
 .portfolio .portfolio-filters {
   padding: 0;
@@ -1580,6 +1586,7 @@ section,
 .portfolio .portfolio-item {
   position: relative;
   overflow: hidden;
+  
 }
 
 .portfolio .portfolio-item .portfolio-info {
@@ -1592,6 +1599,7 @@ section,
   transition: all ease-in-out 0.5s;
   background: color-mix(in srgb, var(--background-color), transparent 10%);
   padding: 15px;
+  
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
@@ -1746,8 +1754,8 @@ section,
   font-size: 24px;
   font-style: italic;
   font-weight: 600;
-  color: var(--default-color);
-  background: var(--accent-light-color); /* color-mix(in srgb, var(--default-color), transparent 95%); */
+  color: var(--heading-color);
+  background: var(--accent-light-color-3);/* color-mix(in srgb, var(--default-color), transparent 95%); */
 }
 
 
@@ -1832,8 +1840,8 @@ section,
 }
 
 .pricing .btn-buy {
-  background: var(--accent-light-color-2); /* var(--accent-dark-color-1); */
-  color: var(--contrast-color);;
+  background: var(--accent-light-color-3); /* var(--accent-dark-color-1); */
+  color: var(--heading-color);
   display: inline-block;
   padding: 8px 35px 10px 35px;
   /* border-radius: 10px; */
@@ -1870,8 +1878,8 @@ section,
 }
 
 .pricing .featured h3 {
-  background: var(--accent-light-color-2);
-  color: var(--contrast-color);;
+  background: var(--accent-light-color-3);
+  color: var(--heading-color);
 }
 
 
