@@ -2523,13 +2523,13 @@ section,
 
     .card-profesionales {
       &:nth-child(1) .box .icon-profesionales .iconBox {
-        background: #d3b19a;
+        background: var(--accent-light-color-1);
       }
       &:nth-child(2) .box .icon-profesionales .iconBox {
-        background: #70b3b1;
+        background: var(--accent-light-color);
       }
       &:nth-child(3) .box .icon-profesionales .iconBox {
-        background: #d05fa2;
+        background: var(--accent-light-color-3);
       }
 
       ul {
@@ -2552,15 +2552,15 @@ section,
         }
 
         .branding {
-          color: darken(#d3b19a, 40%);
+          color: darken(var(--accent-light-color-1), 40%);
         }
 
         .packaging {
-          color: darken(#70b3b1, 40%);
+          color: darken(var(--accent-light-color), 40%);
         }
 
         .marketing {
-          color: darken(#d05fa2, 40%);
+          color: darken(var(--accent-light-color-3), 40%);
         }
       }
 
