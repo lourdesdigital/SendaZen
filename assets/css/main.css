@@ -1644,6 +1644,16 @@ section,
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
+
+.team .col-lg-3{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  position: center;
+}
+
 .team {
   --background-color: color-mix(in srgb, var(--accent-dark-color-1), transparent 96%);
 }
@@ -1659,6 +1669,7 @@ section,
   overflow: hidden;
   background-color: var(--accent-dark-color-1);
   border-radius: 30px;
+  
 }
 
 .team .team-member .social {
