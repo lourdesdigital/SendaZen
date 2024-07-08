@@ -65,6 +65,7 @@
   --accent-light-color-1-b: #99bd46;
   --accent-light-color-2: #640BD5;
   --accent-light-color-3: #FEEF78;
+  --accent-light-color-4: #eb9d9b;
 
   --accent-light-color: #A794E6;
 
@@ -1041,15 +1042,17 @@ section,
   display: inline-block;
   padding: 12px 30px;
   /* border-radius: 10px; */
+
   transition: 0.5s;
   box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-dark-color-1), transparent 80%);
   background: var(--gradient-color);                                                             /* NEW */                                                /* NEW */
-  clip-path: polygon(10% 0%, 100% 0, 100% 50%, 90% 100%, 0 100%, 0% 50%);                        /* NEW */
+  /*clip-path: polygon(10% 0%, 100% 0, 100% 50%, 90% 100%, 0 100%, 0% 50%);                */        /* NEW */
+  border-radius: 30px 10px;
 }
 
 .hero .btn-get-started:hover { /* VER */
   background: var(--gradient-color-2);                                                           /* NEW */
-  box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-dark-color-1), transparent 55%);        /* NEW */
+  box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-dark-color-1), transparent 95%);        /* NEW */
 }
 
 .hero .btn-watch-video {
@@ -2504,6 +2507,9 @@ section,
   margin-inline: auto;
   color: #111;
 
+  margin-top: 0%;
+  margin-bottom: 0%;
+
   .class-profesionales h2 {
     text-transform: capitalize;
     letter-spacing: 0.025em;
@@ -2516,7 +2522,7 @@ section,
   }
 
   .container-profesionales {
-    margin-top: 5em;
+    margin-top: 0%; /* 5em; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     gap: 2rem;
@@ -2531,7 +2537,9 @@ section,
       &:nth-child(3) .box .icon-profesionales .iconBox {
         background: var(--accent-light-color-3);
       }
-
+      &:nth-child(4) .box .icon-profesionales .iconBox {
+        background: var(--accent-light-color-4);
+      }
       ul {
         margin: 0;
         padding: 0;
@@ -2569,7 +2577,7 @@ section,
 
         h3 {
           text-transform: capitalize;
-          font-size: clamp(1.5rem, 1.3909rem + 0.4364vw, 1.8rem);
+          font-size: clamp(0rem, 1.3909rem + 0.4364vw);
         }
 
         p {
@@ -2664,6 +2672,10 @@ section,
   }
 }
 
+.icons-redes .bi{
+  margin-right: 10px; 
+  margin-top: 0%;
+}
 
 /*--------------------------------------------------------------
 # Starter Section Section
