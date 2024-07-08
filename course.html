@@ -121,18 +121,60 @@
             <br>
             <p>Sé parte del curso presencial de fitness y bienestar integral, que incluye entrenamiento físico, técnicas de yoga y enfoques de vida saludable.
               Recibirás un certificado que avala tus conocimientos y habilidades en fitness y bienestar integral.</p>
-            <div class="d-flex">
+          
+          
+          
+            <div class="">
 
 
 
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" style="border-width: 1;" placeholder="Mail" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-secondary btn-get-started" style="border-width: 0;" type="button" id="button-addon2">Obtener</button>
+              <div  class="row mb-6" data-aos="zoom-out"  > <!-- class="input-group mb-3"> -->
+               
+                <div class="col-md-8 mb-3"  style="margin-right:0px;">
+                  <input type="text" class="hero-form-control btn-get-started-border" placeholder="Mail">
+                </div>
+
+                <div class="col-md-4 mb-3"  >
+                  <a href="#about" class="btn-get-started  d-flex align-items-center justify-content-center " >
+
+                    <span style="width: 100%;">Obtener 
+                    <!--<i style="margin-left: 3px;" class="bi bi-arrow-up-right icon" style="width: 10;"></i> -->
+                    <lord-icon id="icon"
+                        src="https://cdn.lordicon.com/ofwxettw.json"
+                        trigger="loop"
+                        delay="200"
+                        stroke="bold"
+                        colors="primary:#000000,secondary:#A794E6"
+                        style=" width:25px; height:25px; margin-left: 5px; padding: 0px; margin-top: 0px ;margin-bottom: 0px;pointer-events: none;">
+                    </lord-icon>
+                    </span>
+
+                  </a>
+                </div>
+
               </div>
-              <!--
-              <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-              -->
+
+
+
             </div>
+
+
+            <script>
+              const icon = document.getElementById('icon'); // Obtén el elemento lord-icon por su ID
+          
+              const originalSrc = "https://cdn.lordicon.com/ofwxettw.json"; // URL original del icono
+              const hoverSrc = "https://cdn.lordicon.com/gqjpawbc.json"; // URL del icono al hacer hover
+          
+              const btnGetStarted = document.querySelector('.btn-get-started'); // Selecciona el botón
+          
+              btnGetStarted.addEventListener('mouseover', function() {
+                  icon.setAttribute('src', hoverSrc); // Cambia el src al hacer hover
+              });
+          
+              btnGetStarted.addEventListener('mouseout', function() {
+                  icon.setAttribute('src', originalSrc); // Restaura el src al salir del hover
+              });          
+            </script>
 
 
             <br>
@@ -390,10 +432,12 @@
           </div>
         </div>
 
-        <div class="btn-wrap">
-          <a href="#" class="btn-buy">¡QUIERO SER PARTE!</a>
-         </div>
+        <div class="btn-wrap d-flex align-items-center justify-content-center"> <!--  d-flex d-flex flex-column justify-content-center-->
+          <a href="#" class="btn-buy"><span>QUIERO SER PARTE</span></a>
+        </div>
+        
         <h4 class="warranty" ><span class="material-symbols-outlined" >verified_user</span> Garantía de devolución de 30 días.</h4>
+    
       </div>
     </div>
 
@@ -554,8 +598,8 @@
 
   </div>
 
-  <div class="btn-wrap">
-    <a href="#" class="important">QUIERO SER PARTE</a>
+  <div class="btn-wrap d-flex align-items-center justify-content-center"> <!--  d-flex d-flex flex-column justify-content-center-->
+    <a href="#" class="btn-buy"><span>QUIERO SER PARTE</span></a>
   </div>
 
 </section><!-- /About Section -->
@@ -589,8 +633,8 @@
 
   </div>
 
-  <div class="btn-wrap">
-    <a href="#" class="important">QUIERO SER PARTE</a>
+  <div class="btn-wrap d-flex align-items-center justify-content-center"> <!--  d-flex d-flex flex-column justify-content-center-->
+    <a href="#" class="btn-buy"><span>QUIERO SER PARTE</span></a>
   </div>
 
 </section><!-- /CERTIFICACIÓN Section -->
@@ -859,9 +903,38 @@
                 <p class="fst-italic">
                   Te invitamos a experimentar nuestros servicios con una clase gratuita. Reserva tu clase gratuita hoy mismo y da el primer paso hacia una vida más saludable y equilibrada!       </p> 
 
-                  <div class="input-group mb-3">
-                    <input type="text" class="form-control" style="border-width: 1;" placeholder="Mail" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary btn-get-started" style="border-width: 0; background-color: var(--accent-dark-color-2); color:var(--contrast-color)"  type="button" id="button-addon2">Obtener</button>
+                  <div class="" style="margin: 0px;">
+
+
+
+                    <div  class="row mb-6" data-aos="zoom-out"  > <!-- class="input-group mb-3"> -->
+                     
+                      <div class="col-md-8 mb-3"  style="margin-right:0px;">
+                        <input type="text" class="hero-form-control btn-get-started-border" placeholder="Mail">
+                      </div>
+      
+                      <div class="col-md-4 mb-3"  >
+                        <a href="#about" class="btn-get-started  d-flex align-items-center justify-content-center " >
+      
+                          <span style="width: 100%;">Obtener 
+                          <!--<i style="margin-left: 3px;" class="bi bi-arrow-up-right icon" style="width: 10;"></i> -->
+                          <lord-icon id="icon"
+                              src="https://cdn.lordicon.com/ofwxettw.json"
+                              trigger="loop"
+                              delay="200"
+                              stroke="bold"
+                              colors="primary:#000000,secondary:#A794E6"
+                              style=" width:25px; height:25px; margin-left: 5px; padding: 0px; margin-top: 0px ;margin-bottom: 0px;pointer-events: none;">
+                          </lord-icon>
+                          </span>
+      
+                        </a>
+                      </div>
+      
+                    </div>
+      
+      
+                    
                   </div>
 
                   
@@ -1014,8 +1087,8 @@
       </div>
   </div>
 
-  <div class="btn-wrap">
-    <a href="#" class="important">QUIERO SER PARTE</a>
+  <div class="btn-wrap d-flex align-items-center justify-content-center"> <!--  d-flex d-flex flex-column justify-content-center-->
+    <a href="#" class="btn-buy"><span>QUIERO SER PARTE</span></a>
   </div>
 
 </section><!-- /About Section -->
@@ -1122,17 +1195,35 @@
           <div class="col-lg-6">
             <h4>¡Únete a nuestro Newsletter!</h4>
             <p>¡Suscríbete a nuestra newsletter y recibe las últimas novedades sobre nuestros productos y servicios!</p>
+
+            <div class="" style="margin: 0px;">
+              <div  class="row" data-aos="zoom-out"  > <!-- class="input-group mb-3"> -->
+               
+                <div class="col-md-8"  style="margin-right:0px;">
+                  <input type="text" class="hero-form-control btn-get-started-border" placeholder="Mail">
+                </div>
+                <div class="col-md-4"  >
+                  <a href="#about" class="btn-get-started  d-flex align-items-center justify-content-center " >
+                    <span style="width: 100%;">Obtener 
+                    </span>
+                  </a>
+                </div>
+
+              </div>              
+            </div>
+            <!--
             <form action="forms/newsletter.php" method="post" class="php-email-form">
               <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Suscribite"></div>
               <div class="loading">Cargando</div>
               <div class="error-message"></div>
               <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-            </form>
+            </form>-->
+
           </div>
         </div>
       </div>
     </div>
-/* 
+
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
@@ -1171,10 +1262,10 @@
           <h4>Follow Us</h4>
           <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
           <div class="social-links d-flex">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a style="background-color:var(--accent-light-color); color: black;" href="">   <i class="bi bi-twitter-x" ></i></a>
+            <a style="background-color:var(--accent-light-color-4); color: black;" href=""> <i class="bi bi-instagram" ></i></a>
+            <a style="background-color:var(--accent-light-color-1); color: black;"href="">  <i class="bi bi-linkedin" ></i></a>
+            <a style="background-color:var(--accent-light-color-3); color: black;"href="">    <i class="bi bi-facebook" ></i></a>
           </div>
         </div>
 
