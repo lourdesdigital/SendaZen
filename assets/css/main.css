@@ -1032,28 +1032,46 @@ section,
   font-weight: 400;
 }
 
-.hero .btn-get-started {
-  color:   var(--contrast-color);
-
+.hero .btn-get-started span{
+  color:   var(--heading-color);
   font-family: var(--heading-font);
-  font-weight: 700;
+  font-weight: 800;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 30px;
-  /* border-radius: 10px; */
 
-  transition: 0.5s;
-  box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-dark-color-1), transparent 80%);
-  background: var(--gradient-color);                                                             /* NEW */                                                /* NEW */
+  /* NUEVOS BOTONES */
+  /*transition: 0.5s;*/
+  /* background: var(--gradient-color);    */     
+  background: var(--background-color);                                                                                               /* NEW */
   /*clip-path: polygon(10% 0%, 100% 0, 100% 50%, 90% 100%, 0 100%, 0% 50%);                */        /* NEW */
-  border-radius: 30px 10px;
+  border: 2px solid var(--heading-color);
+  border-radius: 30px 30px;
 }
 
-.hero .btn-get-started:hover { /* VER */
-  background: var(--gradient-color-2);                                                           /* NEW */
-  box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-dark-color-1), transparent 95%);        /* NEW */
+.hero .btn-get-started i{
+  -webkit-text-stroke: 1.25px
 }
+
+.hero .btn-get-started{   /* CONTENEDOR */
+  box-shadow: 0px 10px 0px var(--heading-color); 
+  border-radius: 30px 30px;
+}
+
+.hero .btn-get-started-border{
+  padding: 2rem 0;
+}
+
+.hero .btn-get-started span:hover {                                                     
+  -webkit-transform: translate(0, 0.3em);
+  transform: translate(0, 0.3em);
+}
+
+
+ /* FIN NUEVOS BOTONES */
+
+ 
 
 .hero .btn-watch-video {
   font-size: 16px;
@@ -1772,10 +1790,12 @@ section,
   background: var(--accent-light-color-3);/* color-mix(in srgb, var(--default-color), transparent 95%); */
 }
 
+.pricing .pricing-item .h4-price{
+  font-size: 36px;
 
+}
 
 .pricing .pricing-item h4 {
-  font-size: 36px;
   font-weight: 600;
   font-family: var(--heading-font);
 }
@@ -1846,50 +1866,65 @@ section,
   text-decoration: line-through;
 }
 
-.pricing .btn-wrap {
-  /*background: color-mix(in srgb, var(--default-color), transparent 95%);*/
-  margin: 0 -20px -20px -20px;
-  padding: 20px 15px;
-  text-align: center;
-}
 
-.pricing .btn-buy {
-  background: var(--accent-light-color-3); /* var(--accent-dark-color-1); */
+
+
+
+.pricing .btn-buy span{
+  background: var(--accent-light-color-3); 
   color: var(--heading-color);
   display: inline-block;
   padding: 8px 35px 10px 35px;
-  /* border-radius: 10px; */
-  clip-path: polygon(10% 0%, 100% 0, 100% 50%, 90% 100%, 0 100%, 0% 50%);                        /* NEW */
+  border: 2px solid var(--heading-color);
+  border-radius: 30px 30px;               
   transition: none;
   font-size: 14px;
-  font-weight: 400;
   font-family: var(--heading-font);
-  font-weight: 600;
-  transition: 0.3s;
+  font-weight: 800;
+  /* transition: 0.3s; */
 }
 
-.pricing .important{
+.pricing .btn-buy{                                           /* Contenedor 1 */
+  box-shadow: 0px 8px 0px var(--heading-color); 
+  border-radius: 30px 30px;
+}
+
+.pricing .btn-buy span:hover {
+  -webkit-transform: translate(0, 0.3em);
+  transform: translate(0, 0.3em);
+}
+
+.pricing .btn-wrap {                                         /* Contenedor 2 */
+  margin: 1rem -20px -20px -20px;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+
+
+
+
+
+
+.pricing .important span{
   background: var(--accent-light-color-1);
-  color: var(--heading-color);;
+  color: var(--heading-color);
   display: inline-block;
   padding: 8px 35px 10px 35px;
-  /* border-radius: 10px; */
-  clip-path: polygon(10% 0%, 100% 0, 100% 50%, 90% 100%, 0 100%, 0% 50%);                        /* NEW */
+  border: 2px solid var(--heading-color);
+  border-radius: 30px 30px;               
   transition: none;
   font-size: 14px;
-  font-weight: 400;
   font-family: var(--heading-font);
-  font-weight: 600;
-  transition: 0.3s;
+  font-weight: 800;
+  /* transition: 0.3s; */
 }
 
-.pricing .important:hover{
-  background: color-mix(in srgb, var(--accent-light-color-1), transparent 20%);
+.pricing .important span:hover{
+  -webkit-transform: translate(0, 0.3em);
+  transform: translate(0, 0.3em);
 }
 
-.pricing .btn-buy:hover {
-  background: color-mix(in srgb, var(--accent-light-color-2), transparent 20%);
-}
 
 .pricing .featured h3 {
   background: var(--accent-light-color-3);
@@ -2590,7 +2625,7 @@ section,
     .card-inner {
       position: relative;
       width: inherit;
-      height: 18.75rem;
+      height: 22rem;
       background: var(--clr);
       border-radius: 1.25rem;
       border-bottom-right-radius: 0;

@@ -104,11 +104,11 @@
 
 /*INICIO Clients-container */
 .square {
-  background-color:  var(--accent-light-color-2);
+  background-color: var(--heading-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--heading-color);
+  color: var(--contrast-color);
   font-size: 12px;
   font-weight: bold;
   border-radius: 20px;
