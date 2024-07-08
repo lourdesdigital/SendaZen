@@ -159,22 +159,7 @@
             </div>
 
 
-            <script>
-              const icon = document.getElementById('icon'); // Obtén el elemento lord-icon por su ID
-          
-              const originalSrc = "https://cdn.lordicon.com/ofwxettw.json"; // URL original del icono
-              const hoverSrc = "https://cdn.lordicon.com/gqjpawbc.json"; // URL del icono al hacer hover
-          
-              const btnGetStarted = document.querySelector('.btn-get-started'); // Selecciona el botón
-          
-              btnGetStarted.addEventListener('mouseover', function() {
-                  icon.setAttribute('src', hoverSrc); // Cambia el src al hacer hover
-              });
-          
-              btnGetStarted.addEventListener('mouseout', function() {
-                  icon.setAttribute('src', originalSrc); // Restaura el src al salir del hover
-              });          
-            </script>
+
 
 
             <br>
@@ -928,7 +913,7 @@
                       </div>
       
                       <div class="col-md-4 mb-3"  >
-                        <a href="#about" class="btn-get-started  d-flex align-items-center justify-content-center " >
+                        <a href="#about" class="btn-get-started btn-get-started-2 d-flex align-items-center justify-content-center " >
       
                           <span style="width: 100%;">Obtener 
                           <!--<i style="margin-left: 3px;" class="bi bi-arrow-up-right icon" style="width: 10;"></i> -->
@@ -1324,6 +1309,40 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    const icon = document.getElementById('icon'); // Obtén el elemento lord-icon por su ID
+
+    const originalSrc = "https://cdn.lordicon.com/ofwxettw.json"; // URL original del icono
+    const hoverSrc = "https://cdn.lordicon.com/gqjpawbc.json"; // URL del icono al hacer hover
+
+    const btnGetStarted = document.querySelector('.btn-get-started'); // Selecciona el botón
+
+    btnGetStarted.addEventListener('mouseover', function() {
+        icon.setAttribute('src', hoverSrc); // Cambia el src al hacer hover
+    });
+
+    btnGetStarted.addEventListener('mouseout', function() {
+        icon.setAttribute('src', originalSrc); // Restaura el src al salir del hover
+    });          
+  </script>
+
+<script>
+  const icon2 = document.getElementById('icon'); // Obtén el elemento lord-icon por su ID
+
+  const originalSrc2 = "https://cdn.lordicon.com/ofwxettw.json"; // URL original del icono
+  const hoverSrc2 = "https://cdn.lordicon.com/gqjpawbc.json"; // URL del icono al hacer hover
+
+  const btnGetStarted2 = document.querySelector('.btn-get-started-2'); // Selecciona el botón
+
+  btnGetStarted2.addEventListener('mouseover', function() {
+      icon2.setAttribute('src', hoverSrc2); // Cambia el src al hacer hover
+  });
+
+  btnGetStarted2.addEventListener('mouseout', function() {
+      icon2.setAttribute('src', originalSrc2); // Restaura el src al salir del hover
+  });          
+</script>
 
 </body>
 
