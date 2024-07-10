@@ -540,6 +540,7 @@ h6 {
   }
 }
 
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
@@ -751,6 +752,7 @@ h6 {
   font-size: 13px;
 }
 
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -941,17 +943,16 @@ section,
 .section-title h2 {
   margin-bottom: 10px;
   font-size: 13px;
-  letter-spacing: 1px;
   font-weight: 700;
-  padding: 8px 20px;
-
+  /* padding: 8px 20px; */
+  letter-spacing: 0.2em;
   background: transparent;/* var(--accent-dark-color-1); */
   color:  var(--accent-light-color-1-b);
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
   font-family: var(--default-font);
-  border: 2px solid var(--accent-light-color-1);
+  /* border: 2px solid var(--accent-light-color-1); */
 }
 
 .section-title p {
@@ -2061,11 +2062,11 @@ section,
   color: var(--contrast-color);
 }
 
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-wrap {
-  box-shadow: 0px 0px 20px color-mix(in srgb, var(--default-color), transparent 90%);
   padding: 30px;
 }
 
@@ -2168,12 +2169,16 @@ section,
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
   font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
-  border-radius: 0;
-  color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  color:   var(--heading-color);
+  font-family: var(--heading-font);
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 30px;   
+  background: transparent;                                                                                   
+  border: 2px solid var(--heading-color);
+  border-radius: 30px 30px;
 }
 
 .contact .php-email-form input[type=text]:focus,
@@ -2209,6 +2214,11 @@ section,
   100% {
     transform: rotate(360deg);
   }
+}
+
+.form-subtitle-label{
+  font-family: var(--font-bold);
+  font-weight: bold;
 }
 
 /*--------------------------------------------------------------
