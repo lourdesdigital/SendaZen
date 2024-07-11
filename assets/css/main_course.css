@@ -258,7 +258,7 @@ h6 {
 
 .header .branding {
   min-height: 60px;
-  padding: 10px 0;
+  padding: 18px 0; /* PASAR A COURSE */
 }
 
 .header .logo {
@@ -266,7 +266,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 24px;
+  max-height: 22px;  /* PASAR A COURSE */
   margin-right: 8px;
 }
 
@@ -523,6 +523,8 @@ h6 {
     display: block;
   }
 }
+
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
