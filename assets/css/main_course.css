@@ -1298,9 +1298,8 @@ section,
 # Stats Section
 --------------------------------------------------------------*/
 .stats i {
-  background-color: var(--accent-dark-color-1);
-  color: var(--contrast-color);
-  border: 6px solid var(--contrast-color);
+  color: var(--heading-color);
+  border: 8px solid var(--contrast-color);
   width: 64px;
   height: 64px;
   font-size: 24px;
@@ -1310,6 +1309,8 @@ section,
   justify-content: center;
   position: relative;
   z-index: 1;
+  font-size: 3rem;
+  margin-top: 1rem;
 }
 
 .stats .stats-item {
@@ -1424,16 +1425,16 @@ section,
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials {
-  --default-color: var(--contrast-color);
-  --background-color:var(--accent-dark-color-1);
-  --heading-color: var(--contrast-color);
+  --default-color: var(--heading-color);
+  /*--background-color:var(--accent-dark-color-1);*/
+  --heading-color: var(--heading-color);
   padding: 80px 0;
   position: relative;
 }
 
 .testimonials:before {
   content: "";
-  background: color-mix(in srgb, color-mix(in srgb, var(--background-color), transparent 15%), black 30%);
+  /*background: color-mix(in srgb, color-mix(in srgb, var(--background-color), transparent 15%), black 30%);*/
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1478,7 +1479,7 @@ section,
 .testimonials .testimonial-item h4 {
   font-size: 14px;
   margin: 0 0 15px 0;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: var(--default-color);
 }
 
 .testimonials .testimonial-item .stars {
@@ -1492,7 +1493,7 @@ section,
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  
   font-size: 26px;
   line-height: 0;
 }
@@ -2137,6 +2138,19 @@ section,
   margin-bottom: 40px;
 }
 
+.contact .info-item img {
+  font-size: 20px;
+  /*color: var(--accent-dark-color-1);*/
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+
 .contact .info-item i {
   font-size: 20px;
   /*color: var(--accent-dark-color-1);*/
@@ -2146,7 +2160,6 @@ section,
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
   transition: all 0.3s ease-in-out;
   margin-right: 15px;
 }

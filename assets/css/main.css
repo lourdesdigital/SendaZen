@@ -2104,6 +2104,18 @@ section,
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+.contact .info-item img {
+  font-size: 20px;
+  /*color: var(--accent-dark-color-1);*/
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
   margin-right: 15px;
@@ -2836,6 +2848,23 @@ section,
   border: 2px solid var(--heading-color);
   border-radius: 30px;
 }
+
+/*--------------------------------------------------------------
+# Icons
+--------------------------------------------------------------*/
+
+.small-icons {
+  font-size: 20px;
+  /*color: var(--accent-dark-color-1);*/
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  margin-right: 20px;
+}
+
 
 /*--------------------------------------------------------------
 # Starter Section Section
