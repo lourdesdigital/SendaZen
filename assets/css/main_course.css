@@ -56,7 +56,7 @@
 :root { 
   --background-color: #FFFFFF;  /* Background color for the entire website, including individual sections */
 
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+  --default-color: #222222; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
   
   --accent-dark-color-1: #640BD5;  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -2482,6 +2482,17 @@ section,
   background-color: #1a1b21;
   color: #aaa;
 }
+
+/*--------------------------------------------------------------
+# Map
+--------------------------------------------------------------*/
+
+.iframe-map{
+  border: 2px solid var(--heading-color);
+  border-radius: 30px;
+}
+
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
