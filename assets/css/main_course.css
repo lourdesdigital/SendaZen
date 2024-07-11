@@ -266,7 +266,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 24px;
   margin-right: 8px;
 }
 
@@ -312,7 +312,7 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--heading-color);
-    padding: 18px 15px;
+    padding: 10px 15px;
     font-size: 15px;
     font-family: var(--nav-font);
     font-weight: 500;
@@ -523,7 +523,6 @@ h6 {
     display: block;
   }
 }
-
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
@@ -550,9 +549,8 @@ h6 {
   margin-top: 30px;
   padding: 6px 8px;
   position: relative;
-  background-color: var(--contrast-color);
+
   border: 1px solid color-mix(in srgb, var(--accent-dark-color-1), transparent 80%);
-  box-shadow: 0px 2px 25px color-mix(in srgb, var(--accent-dark-color-1), transparent 90%);
   display: flex;
   transition: 0.3s;
   border-radius: 4px;
@@ -652,7 +650,7 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  border: 2px solid var(--heading-color);
   font-size: 16px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-right: 10px;
@@ -734,6 +732,8 @@ h6 {
   margin-top: 6px;
   font-size: 13px;
 }
+
+
 
 /*--------------------------------------------------------------
 # Preloader
@@ -969,7 +969,7 @@ section,
 }
  
 .primaryContentCupon p .description-title {
-  color: var(--accent-dark-color-2);
+  color: var(--accent-light-color-2);
 }
 
 /*--------------------------------------------------------------
@@ -1202,9 +1202,6 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about {
-  --background-color: color-mix(in srgb, var(--accent-dark-color-1), transparent 96%);
-}
 
 .about  .img-fluid{
   padding: 10%; 
@@ -1353,7 +1350,7 @@ section,
 # Clients Section
 --------------------------------------------------------------*/
 .clients {
-  --background-color: color-mix(in srgb, var(--accent-dark-color-1), transparent 96%);
+
   padding: 25px 0;
 
 }
@@ -1661,9 +1658,7 @@ section,
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
-.team {
-  --background-color: color-mix(in srgb, var(--accent-dark-color-1), transparent 96%);
-}
+
 
 .team .team-member {
   box-shadow: 0px 2px 15px color-mix(in srgb, var(--default-color), transparent 90%);
@@ -2008,16 +2003,13 @@ section,
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
-.faq {
-  --background-color: color-mix(in srgb, var(--accent-dark-color-1), transparent 96%);
-}
 
 .faq .faq-container .faq-item {
   background-color: var(--contrast-color);
   position: relative;
   padding: 20px;
   margin-bottom: 15px;
-  border-bottom: 1px solid var(--accent-light-color-1);
+  border-bottom: 2px solid var(--accent-light-color-1);
   /* border-radius: 5px; */
   overflow: hidden;
 }
@@ -2048,7 +2040,6 @@ section,
 }
 
 
-
 .faq .faq-container .faq-item .faq-content {
   display: grid;
   grid-template-rows: 0fr;
@@ -2075,6 +2066,7 @@ section,
 .faq .faq-container .faq-faq-active:hover {
   color: var(--accent-light-color);
 }
+
 .faq .faq-container .faq-item h3 strong{
   color: var(--accent-light-color);
 }
@@ -2090,7 +2082,7 @@ section,
 }
 
 .faq .faq-container .faq-active h3 strong{
-  color: var(--contrast-color);
+  color: var(--heading-color);
 }
 
 .faq .faq-container .faq-active .faq-content {
@@ -2134,6 +2126,7 @@ section,
   padding: 30px;
 }
 
+
 @media (max-width: 575px) {
   .contact .info-wrap {
     padding: 20px;
@@ -2146,7 +2139,7 @@ section,
 
 .contact .info-item i {
   font-size: 20px;
-  color: var(--accent-dark-color-1);
+  /*color: var(--accent-dark-color-1);*/
   background: color-mix(in srgb, var(--accent-dark-color-1), transparent 92%);
   width: 44px;
   height: 44px;
@@ -2173,13 +2166,14 @@ section,
 }
 
 .contact .info-item:hover i {
-  background: var(--accent-dark-color-1);
+  /*background: var(--accent-dark-color-1);*/
   color: var(--contrast-color);
 }
 
 .contact .php-email-form {
   height: 100%;
   padding: 30px;
+  box-shadow: 0px 0px 20px color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 @media (max-width: 575px) {
@@ -2223,7 +2217,7 @@ section,
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-dark-color-1);
+  border: 3px solid; /* var(--accent-dark-color-1);*/
   border-top-color: var(--background-color);
   animation: animate-loading 1s linear infinite;
 }
@@ -2234,12 +2228,12 @@ section,
   font-size: 14px;
   color:   var(--heading-color);
   font-family: var(--heading-font);
-  font-weight: 800;
+  font-weight: 400;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 30px;   
-  background: transparent;                                                                                             
+  background: transparent;                                                                                   
   border: 2px solid var(--heading-color);
   border-radius: 30px 30px;
 }
@@ -2247,7 +2241,8 @@ section,
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
-  border-color: var(--accent-dark-color-1);
+  border: 3px solid var(--heading-color);
+  box-shadow: none;
 }
 
 .contact .php-email-form input[type=text]::placeholder,
@@ -2258,7 +2253,7 @@ section,
 
 .contact .php-email-form button[type=submit] {
   color: var(--contrast-color);
-  background: var(--accent-dark-color-1);
+  /*background: var(--accent-dark-color-1);*/
   border: 0;
   padding: 10px 30px;
   transition: 0.4s;
@@ -2280,7 +2275,8 @@ section,
 }
 
 .form-subtitle-label{
-  font-family: var(--font-bold);
+  font-family: var(--heading-color);
+  color: var(--heading-color);
   font-weight: bold;
 }
 
