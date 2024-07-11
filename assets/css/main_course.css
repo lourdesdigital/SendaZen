@@ -957,11 +957,11 @@ section,
 
 
 .primaryContent p span{
-  color: var(--contrast-color);  
+  color: var(--heading-color);  
 }
  
 .primaryContent p .description-title {
-  color: var(--accent-light-color-1);
+  color: var(--accent-dark-color-1);
 }
 
 .primaryContentCupon p span{
@@ -1479,7 +1479,7 @@ section,
 .testimonials .testimonial-item h4 {
   font-size: 14px;
   margin: 0 0 15px 0;
-  color: var(--default-color);
+  color: var(--heading-color);
 }
 
 .testimonials .testimonial-item .stars {
@@ -1540,12 +1540,12 @@ section,
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px; 
   height: 12px; 
-  background-color: color-mix(in srgb, var(--default-color), transparent 50%);
-  opacity: 0.5;
+
+  opacity: 0.25;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--default-color);
+  background-color:var(--accent-light-color);
   opacity: 1;
 }
 
@@ -1555,7 +1555,11 @@ section,
   }
 }
 
-/*--------------------------------------------------------------
+.bi-quote{
+  color:var(--accent-light-color-4);
+}
+/*-----
+---------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
 .portfolio .portfolio-filters {
@@ -1837,7 +1841,7 @@ section,
 --------------------------------------------------------------*/
 
 #pricing {
-  background-color: var(--accent-dark-color-1);
+  background-color: var(--accent-light-color-3);
 }
 
 
