@@ -957,7 +957,7 @@ section,
 
 
 .primaryContent p span{
-  color: var(--heading-color);  
+  color: var(--contrast-color);  
 }
  
 .primaryContent p .description-title {
@@ -1841,7 +1841,7 @@ section,
 --------------------------------------------------------------*/
 
 #pricing {
-  background-color: var(--accent-light-color-3);
+  background-color: var(--accent-light-color);
 }
 
 
