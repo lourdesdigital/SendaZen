@@ -2636,15 +2636,19 @@ section,
     .card-profesionales {
       &:nth-child(1) .box .icon-profesionales .iconBox {
         background: var(--accent-light-color-1);
+        border: 2px solid var(--heading-color);
       }
       &:nth-child(2) .box .icon-profesionales .iconBox {
         background: var(--accent-light-color);
+        border: 2px solid var(--heading-color);
       }
       &:nth-child(3) .box .icon-profesionales .iconBox {
         background: var(--accent-light-color-3);
+        border: 2px solid var(--heading-color);
       }
       &:nth-child(4) .box .icon-profesionales .iconBox {
         background: var(--accent-light-color-4);
+        border: 2px solid var(--heading-color);
       }
       ul {
         margin: 0;
