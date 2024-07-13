@@ -530,7 +530,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  background-color: var(--accent-light-color-1); /*color-mix(in srgb, var(--default-color), transparent 85%);*/
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
@@ -1462,7 +1462,15 @@ section,
   overflow: hidden;
 }
 .testimonials .testimonial-item {
-  text-align: center;
+
+  width: 75%;
+
+  margin: 0 auto; /* Para centrar horizontalmente */
+  text-align: center; /* Para centrar el texto dentro del contenedor */
+  display: flex; /* Utilizamos flexbox para centrar verticalmente si es necesario */
+  flex-direction: column; /* Alineación vertical */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1470,6 +1478,7 @@ section,
   border-radius: 50%;
   border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
   margin: 0 auto;
+  
 }
 
 .testimonials .testimonial-item h3 {
