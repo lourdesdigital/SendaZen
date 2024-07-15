@@ -903,7 +903,8 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding-bottom: 20px;
+  padding-top: 60px;
   scroll-margin-top: 118px;
   overflow: clip;
 }
@@ -1785,7 +1786,7 @@ section,
 .btn-wrap {
   /*background: color-mix(in srgb, var(--default-color), transparent 95%);*/
   margin-top: 10px;
-  padding: 10px 15px;
+  padding: 10px 0px;
   text-align: center;
   
 }
@@ -1859,57 +1860,64 @@ section,
 --------------------------------------------------------------*/
 
 #pricing {
-  background-color: var(--accent-light-color);
+  background-color: #B29FF3;
 }
 
 
 .pricing .pricing-item {
-  box-shadow: 0px 0px 4px color-mix(in srgb, var(--default-color), transparent 90%);
-  padding: 20px;
-  text-align: center;
+
+  padding-right: 20px;
+  text-align: left;
   position: relative;
   overflow: hidden;
-  background-color: #FFFFFF;
-  border-radius: 1.25rem;
 }
 
 .pricing .pricing-item h3 {
   font-weight: 400;
-  margin: -20px -20px 20px -20px;
-  padding: 20px 15px;
-  font-size: 24px;
+  text-align: left;
+  font-size: 50px;
   font-style: italic;
   font-weight: 600;
-  color: var(--default-color);
-  background: var(--accent-light-color-2); /* color-mix(in srgb, var(--default-color), transparent 95%); */
+  color: var(--accent-light-color-1);
+  /*background: var(--accent-light-color-2);  color-mix(in srgb, var(--default-color), transparent 95%); */
 }
 
 
 
 .pricing .pricing-item h4 {
+  text-align: left;
   font-size: 36px;
-  font-weight: 600;
-  font-family: var(--heading-font);
+  font-family: var(--default-font);
+  font-family: var(--contrast-color);
 }
 
 .pricing .pricing-item h4 sup {
   font-size: 20px;
   top: -15px;
-  left: -3px;
+  color: var(--heading-color);
+}
+
+.pricing .pricing-item h5 {
+  font-size: 16px;
+  color: var(--heading-color);
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-weight: 400;
+  top: -15px;
+  font-family: var(--default-font);
 }
 
 .pricing .pricing-item h4 span {
-  color: color-mix(in srgb, var(--default-color), transparent 0%); 
-  font-size: 16px;
-  font-weight: 300;
+  color: var(--heading-color);
+  font-size: 20px;
 }
 
 .featured .warranty{
   display: flex;
-  justify-content: center; /* Centra horizontalmente los elementos */
-  align-items: center; /* Centra verticalmente los elementos */
-  text-align: center; 
-  align-items: center;
+  justify-content: left; /* Centra horizontalmente los elementos */
+  align-items: left; /* Centra verticalmente los elementos */
+  text-align: left; 
+  align-items: left;
   margin-top: 12px;
 }
 
@@ -1918,13 +1926,14 @@ section,
 }
 
 .pricing .pricing-item .warranty{
-  color: color-mix(in srgb, var(--default-color), transparent 10%); 
-  font-size: 14px;
+  color: var(--contrast-color);
+  font-size: 16px;
   font-weight: 300;
 }
 
 .pricing .pricing-item p {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .pricing .pricing-item ul {
@@ -1945,16 +1954,18 @@ section,
 
 .pricing .pricing-item ul li span{
   margin-right: 5px;
+  margin-top: 5px;
+  font-weight: 500;
 }
 
 .pricing .pricing-item ul i {
-  color: var(--accent-dark-color-1);
+  color: var(--contrast-color);
   font-size: 18px;
   padding-right: 4px;
 }
 
 .pricing .pricing-item ul .na {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: var(--contrast-color);
   text-decoration: line-through;
 }
 
@@ -2005,13 +2016,13 @@ section,
 */
 
 .pricing .featured h3 {
-  background: var(--accent-light-color-2);
-  color: var(--heading-color);
+  color: var(--contrast-color);
+  text-align: left;
 }
 
 .pricing .advanced {
   background: #ffffff;
-  color:var(--heading-color);
+  color: var(--contrast-color);
   width: 200px;
   position: absolute;
   top: 18px;
@@ -2021,6 +2032,7 @@ section,
   z-index: 1;
   font-size: 14px;
   padding: 2px 0 2px 0;
+  text-align: left;
 }
 
 /*--------------------------------------------------------------
@@ -2450,8 +2462,8 @@ section,
 .container-cards {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   width: 100%;
   height: 100%;
 }
@@ -2463,7 +2475,7 @@ section,
   font-family: sans-serif;
   font-size: 1.2em;
   color: #aaa;
-  word-spacing: 5px;
+  word-spacing: 10px;
   text-align: left;
 }
 
@@ -2498,10 +2510,7 @@ section,
   max-width: 100%;
 }
 
-.row-cards:Hover {
-  background-color: #1a1b21;
-  cursor: pointer;
-}
+
 
 #urchoice {
   margin: 60px;
