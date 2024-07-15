@@ -97,6 +97,129 @@
 }
 
 /*--------------------------------------------------------------
+# Hero Mobile
+--------------------------------------------------------------*/
+
+.elemento-a-ocultar-desktop{
+  display: none;
+}
+
+/* MOBILE CARDS NUEVAS */
+
+@media (max-width: 432px) {
+
+  /* HERO */
+
+  .elemento-a-ocultar{
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0p
+  }
+
+  .elemento-a-ocultar{
+    display: none;
+  }
+  
+  .elemento-a-ocultar-desktop{
+    display: flex;
+  }
+
+  body{
+    width: 100%;
+  }
+
+  .img-hero-mobile{
+    width: 75%;
+    margin-top: -40px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+  }
+ 
+
+  .main {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .hero p, .hero h1{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .hero h1{
+    font-size: 45px;
+  }
+
+ .btn-get-started-border, .people-hero, .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 0px;
+    padding-top: 0px;
+
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .clients-container{
+    margin-left: 12%;
+  }
+  
+  .container{
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+
+
+  /* CONOCENOS */
+
+  .nosotros-icon-info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .nosotros-icon-info .icon-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nosotros-icon-info .info-icons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .nosotros-icon-info .icon-container,
+  .nosotros-icon-info h4,
+  .nosotros-icon-info p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nosotros-icon-info p {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+}
+
+/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 
@@ -553,8 +676,8 @@ h6 {
   padding-bottom: 50px;
   position: relative;
  
-  border-top-right-radius: 200px;
-  border-top-left-radius: 200px;
+  border-top-right-radius: 5rem;
+  border-top-left-radius: 5rem;
 }
 
 .footer .footer-newsletter {
@@ -1127,7 +1250,7 @@ section,
 
 @media (max-width: 640px) {
   .hero h1 {
-    font-size: 35px;
+    font-size: 45px;
     line-height: 120%;
     line-height: 36px;
   }
@@ -2492,61 +2615,62 @@ section,
   animation-timing-function: linear; /* Añadir la propiedad estándar */
 }
 
-/* MOBILE */
+/* MOBILE CARDS NUEVAS */
 
-@media (max-width: 1199px) {
+@media (max-width: 432px) {
+  
+  
+  .container-profesionales {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 0%; 
+    grid-template-columns: none; 
 
-  .card {
-    top: 10vh;
-    width: 100px; /* 12vw; */
-    height: 185px; /* 20vh; */
+  }
+  
+  .container-profesionales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
   }
 
-  .carrousel-animation {
-
-  align-items: center;
-  align-content: center;
-  -webkit-perspective: 500px;
-  -moz-perspective: 500px;
-  perspective: 500px; /* Añadir la propiedad estándar */
-  width: 30vw;
-  height: 40vh;
-  margin: 50px;
-  top: 5vh;
+  .card-profesionales {
+    width: 100%;
+    max-width: 20rem; 
   }
 
-  #c3 {
-    background-image: url('/assets/img/01.jpg');
-    -webkit-animation-delay: -3.2s; /* Aumentado para mantener el ritmo con la nueva duración */
-    -moz-animation-delay: -3.2s; /* Aumentado para mantener el ritmo con la nueva duración */
-    animation-delay: -3.2s; /* Añadir la propiedad estándar */
-    
+  .card-inner {
+    height: auto;
   }
 
-  #c2 {
-    background-image: url('/assets/img/02.jpg');
-    -webkit-animation-delay: -6.4s; /* Aumentado para mantener el ritmo con la nueva duración */
-    -moz-animation-delay: -6.4s; /* Aumentado para mantener el ritmo con la nueva duración */
-    animation-delay: -6.4s; /* Añadir la propiedad estándar */
+  .box {
+    position: relative;
+    height: 15rem; 
   }
 
-  #c1 {
-    background-image: url('/assets/img/03.jpg');
-    -webkit-animation-delay: -9.6s; /* Aumentado para mantener el ritmo con la nueva duración */
-    -moz-animation-delay: -9.6s; /* Aumentado para mantener el ritmo con la nueva duración */
-    animation-delay: -9.6s; /* Añadir la propiedad estándar */
+  .imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
-  #c0 {
-    background-image: url('/assets/img/04.jpg');
-    -webkit-animation-delay: -12.8s; /* Aumentado para mantener el ritmo con la nueva duración */
-    -moz-animation-delay: -12.8s; /* Aumentado para mantener el ritmo con la nueva duración */
-    animation-delay: -12.8s; /* Añadir la propiedad estándar */
+  .content-profesionales {
+    padding: 1rem;
+    text-align: center;
   }
 
+  .elemento-a-ocultar {
+    display: none;
+  }
 }
 
-/* FIN MOBILE */
 
 #c4 {
   background-image: url(http://lorempixel.com/g/100/160/people/5);
@@ -2554,30 +2678,30 @@ section,
 
 #c3 {
   background-image: url('/assets/img/04.jpg');
-  -webkit-animation-delay: -3.2s; /* Aumentado para mantener el ritmo con la nueva duración */
-  -moz-animation-delay: -3.2s; /* Aumentado para mantener el ritmo con la nueva duración */
-  animation-delay: -3.2s; /* Añadir la propiedad estándar */
+  -webkit-animation-delay: -3.2s; 
+  -moz-animation-delay: -3.2s; 
+  animation-delay: -3.2s; 
 }
 
 #c2 {
   background-image: url('/assets/img/03.jpg');
-  -webkit-animation-delay: -6.4s; /* Aumentado para mantener el ritmo con la nueva duración */
-  -moz-animation-delay: -6.4s; /* Aumentado para mantener el ritmo con la nueva duración */
-  animation-delay: -6.4s; /* Añadir la propiedad estándar */
+  -webkit-animation-delay: -6.4s; 
+  -moz-animation-delay: -6.4s; 
+  animation-delay: -6.4s; 
 }
 
 #c1 {
   background-image: url('/assets/img/02.jpg');
-  -webkit-animation-delay: -9.6s; /* Aumentado para mantener el ritmo con la nueva duración */
-  -moz-animation-delay: -9.6s; /* Aumentado para mantener el ritmo con la nueva duración */
-  animation-delay: -9.6s; /* Añadir la propiedad estándar */
+  -webkit-animation-delay: -9.6s; 
+  -moz-animation-delay: -9.6s;
+  animation-delay: -9.6s; 
 }
 
 #c0 {
   background-image: url('/assets/img/01.jpg');
-  -webkit-animation-delay: -12.8s; /* Aumentado para mantener el ritmo con la nueva duración */
-  -moz-animation-delay: -12.8s; /* Aumentado para mantener el ritmo con la nueva duración */
-  animation-delay: -12.8s; /* Añadir la propiedad estándar */
+  -webkit-animation-delay: -12.8s; 
+  -moz-animation-delay: -12.8s; 
+  animation-delay: -12.8s; 
 }
 
 .imagen-centro{
@@ -2620,7 +2744,10 @@ section,
 /*--------------------------------------------------------------
 # TEST NUEVAS CARDS
 --------------------------------------------------------------*/
-
+body{
+  margin: 0px;
+  padding: 0%;
+}
 
 * {
   margin: 0;
@@ -2636,6 +2763,7 @@ section,
 
   margin-top: 0%;
   margin-bottom: 0%;
+}
 
   .class-profesionales h2 {
     text-transform: capitalize;
@@ -2736,7 +2864,6 @@ section,
 
           img {
             width: 100%;
-            height: 100%;
             object-fit: cover;
           }
         }

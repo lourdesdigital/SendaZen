@@ -535,8 +535,8 @@ h6 {
   padding-bottom: 50px;
   position: relative;
  
-  border-top-right-radius: 200px;
-  border-top-left-radius: 200px;
+  border-top-right-radius: 5rem;
+  border-top-left-radius: 5rem;
 }
 
 .footer .footer-newsletter {
