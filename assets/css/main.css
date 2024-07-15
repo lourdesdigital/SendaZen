@@ -106,7 +106,7 @@
 
 /* MOBILE CARDS NUEVAS */
 
-@media (max-width: 432px) {
+@media (max-width: 968px) { /* 432px */
 
   /* HERO */
 
@@ -215,6 +215,73 @@
   .nosotros-icon-info p {
     margin-left: 25px;
     margin-right: 25px;
+  }
+
+
+
+  /* QUOTE */
+
+  #vision{
+
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .onlyquotemobile p {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+
+
+  /* TITLE OPINIONS */
+
+  .title-section-title-opinion{
+    text-align: center;
+  }
+
+
+
+  /* FAQS */
+
+  .faq-container{
+    padding: 20px;
+    padding: 20px;
+    display: inline;
+  }
+
+
+
+  /* FOOTER */
+  .footer-links h4{
+    margin-top: 15px;
+  }
+
+  .footer-about{
+    margin-bottom: 20px;
+  }
+
+  .footer, .footer .footer-links ul li, .social-links, .footer-links, .sitename{
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .footer .col-md-8{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .hero-form-control{
+    margin-bottom: 15px;
   }
 
 }
