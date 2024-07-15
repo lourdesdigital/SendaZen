@@ -14,8 +14,7 @@
 
   <!-- Icons -->
   <script src="https://cdn.lordicon.com/lordicon.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,500,0,200" />  
 
   <!-- Fonts -->
   <link rel="stylesheet" href="https://use.typekit.net/djt6goe.css">
@@ -80,30 +79,28 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="#hero" class="active">Home</a></li>
-            <li><a href="#about">Sobre nosotros</a></li>
-            <li><a href="#team">Nuestro equipo</a></li>
+            
+            <li class="dropdown"><a href="#pricing"><span>Sobre nosotros</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#about">¿Quienes somos?</a></li>
+                <li><a href="#team">Nuestro equipo</a></li>
+                <li><a href="#vision">Nuestra visión</a></li>
+              </ul>
+            </li>
 
             <li class="dropdown"><a href="#pricing"><span>Talleres</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="https://lourdesdigital.github.io/SendaZen/course" target="_blank">Taller Introductorio</a></li>
-                <li class="dropdown"><a href="https://lourdesdigital.github.io/SendaZen/course" target="_blank"><span>Taller TOP100</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <!-- 
-                  <ul>
-                    <li><a href="#">TOP100</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                  -->
-                </li>
+                <li><a href="https://lourdesdigital.github.io/SendaZen/course" target="_blank">Taller TOP100</a></li>
                 <li><a href="https://lourdesdigital.github.io/SendaZen/course" target="_blank">Profesionalizate</a></li>
               </ul>
             </li>
 
-            <li><a href="#vision">Nuestra visión</a></li><!--#portfolio -->
-            <li><a href="#team">Equipo</a></li>
+            
+            <li><a href="#opinions">Opiniones</a></li>
+            <li><a href="#portfolio">Galería</a></li>
             <li><a href="#contact">Contacto</a></li>
+
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -126,7 +123,7 @@
             <br>
             <p>Descubre un espacio donde tu cuerpo y mente encuentran equilibrio. ¡Únete a nuestros cursos guiados por expertos y consigue la motivación y el conocimiento que necesitas para alcanzar tus metas!</p>
             <div class="d-flex btn-get-started-border">
-              <a href="https://lourdesdigital.github.io/SendaZen/course"  target="_blank" class="btn-get-started"><span>Obtén tu clase gratuita <i style="margin-left: 6px; font-style: bold; width: 10; -webkit-text-stroke: 1.5px currentColor  " class="bi bi-arrow-up-right icon"></i></span></a>
+              <a href="https://lourdesdigital.github.io/SendaZen/course"  target="_blank" class="btn-get-started"><span>Obtén tu clase gratuita <i style="margin-left: 6px; font-style: bold; width: 10; -webkit-text-stroke: 1.5px currentColor; " class="bi bi-arrow-up-right icon"></i></span></a>
             </div>
 
 
@@ -517,7 +514,7 @@
                   <h3>Psicóloga Integral</h3>
                   <ul>
                     <li style="--clr-tag:var(--accent-light-color-4);" class="branding">Ana Díaz</li>
-                    <li  class="marketing">MATRICULA: 000000 </li>
+                    <li  class="marketing">MATRICULA: M16418</li>
                   </ul>
                   <p>Diseñará estrategias personalizadas de mindfulness para mejorar tu bienestar emocional.</p>
                 </div>
@@ -546,12 +543,12 @@
                   </div>
                 </div>
                 <div class="content-profesionales">
-                  <h3>Cambiar</h3>
+                  <h3>Mentor de Estiramiento</h3>
                   <ul>
-                    <li style="--clr-tag:var(--accent-light-color-1);" class="branding">Sara Ruiz</li>
-                    <li  class="marketing">Yoga Terapéutica</li>
+                    <li style="--clr-tag:var(--accent-light-color);" class="branding">Jhon Lee</li>
+                    <li  class="marketing">Resistencia</li>
                   </ul>
-                  <p>Cambiar.</p>
+                  <p>Creará sesiones de estiramiento y resistencia Para mejorar tu flexibilidad y fortaleza física.</p>
                 </div>
               </div>
 
@@ -569,12 +566,12 @@
                   </div>
                 </div>
                 <div class="content-profesionales">
-                  <h3>Mentor de Estiramiento</h3>
+                  <h3>Instructora de Tai Chi</h3>
                   <ul>
-                    <li style="--clr-tag:var(--accent-light-color);" class="branding">Jhon Lee</li>
-                    <li  class="marketing">Resistencia</li>
+                    <li style="--clr-tag:var(--accent-light-color);" class="branding">Ryu Lee</li>
+                    <li  class="marketing">Tai Chi</li>
                   </ul>
-                  <p>Creará sesiones de estiramiento y resistencia Para mejorar tu flexibilidad y fortaleza física.</p>
+                  <p>Con su enfoque y conocimientos, te ayudará a integrar los principios del Tai Chi en tu vida diaria.</p>
                 </div>
               </div>
 
@@ -695,7 +692,7 @@
                 <div class="content-profesionales">
                   <h3>Coach Integral</h3>
                   <ul>
-                    <li style="--clr-tag: var(--accent-light-color-3);" class="branding">Nombre</li>
+                    <li style="--clr-tag: var(--accent-light-color-3);" class="branding">Vannesa López</li>
                     <li  class="marketing">Coach Integral</li>
                   </ul>
                   <p>Te inspirará a alcanzar tus metas más ambiciosas con técnicas probadas que transformarán tu vida.</p>
@@ -716,12 +713,12 @@
                   </div>
                 </div>
                 <div class="content-profesionales">
-                  <h3>Gimnasia Rítmica</h3>
+                  <h3>Terapeuta</h3>
                   <ul>
                     <li style="--clr-tag:var(--accent-light-color-4);" class="branding">Ruby Reyes</li>
-                    <li  class="marketing">MATRICULA: 000000 </li>
+                    <li  class="marketing">MATRICULA: M15348 </li>
                   </ul>
-                  <p>Creará rutinas de gimnasia rítmica adaptadas a tu nivel para mejorar tu técnica y expresión artística.</p>
+                  <p>Se encarga de examinar las articulaciones y huesos para mejorar la movilidad de los pacientes.</p>
                 </div>
               </div>
 
@@ -771,25 +768,26 @@
           <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="pricing-item featured">
               <h3>Taller Introductorio</h3>
-              <p><strong>Curso preparatorio inicial para principiantes</strong><br> 3 Meses de duración | 1 encuentro semanal</p>
-              
+              <!--<p><strong>Curso preparatorio inicial para principiantes</strong><br> 3 Meses de duración | 1 encuentro semanal</p>-->
+              <p style="margin-bottom: 20px;"><strong>Curso preparatorio inicial para principiantes</strong><br></p>
               <img src="assets/img/Prices/Card01.png" class="img-fluid" style="height: 150px; margin-bottom: 22px;">
               
               <ul>
-                <li><p><strong>¿Qué está incluido?</strong></p></li>
-                <li><span class="material-symbols-outlined">task_alt</span>Acceso libre a todas las salas durante la cursada</li>
-                <li><span class="material-symbols-outlined">task_alt</span>Seguimiento profesional en grupos reducidos</li>
-                <li style="text-decoration: line-through;"><span style="color: #CC4743;" class="material-symbols-outlined">cancel</span>Certificado al aprobar el examen final</li>
+                <li><p><strong>Tu Experiencia Incluye:</strong></p></li>
+                <li><span class="material-symbols-outlined icon-price-card" style="background-color: var(--accent-light-color-3);">calendar_month</span>1 Mes de duración y 1 encuentro semanal</li>
+                <li><span class="material-symbols-outlined icon-price-card" style="background-color: var(--accent-light-color-4);">location_on</span>Modalidad presencial en nuestro centro</li>
+                <li><span class="material-symbols-outlined icon-price-card" style="background-color: var(--accent-light-color-1);">workspace_premium</span>Acceso a recursos y materiales exclusivos</li>
               </ul>
               <h4 style="margin: 0px; padding: 0px;"><span style="color:transparent; margin: 0px; padding: 0px;"> 0</span></h4>
               <h4 class="h4-price"><sup>$</sup>10<span> usd / por mes  </span></h4>
               
               <div class="btn-wrap d-flex align-items-center justify-content-center"> <!--  d-flex d-flex flex-column justify-content-center-->
-                <a href="#" class="btn-buy "><span>QUIERO SER PARTE</span></a>
+                <a href="https://lourdesdigital.github.io/SendaZen/course" target="_blank" class="btn-buy "><span>QUIERO SER PARTE</span></a>
               </div>
-              
+              <!--
               <h4 class="warranty" ><span class="material-symbols-outlined" >verified_user</span> Garantía de devolución de 30 días.</h4>
-          
+          -->
+
             </div>
             
           </div><!-- End Pricing Item -->
@@ -798,27 +796,27 @@
             <div class="pricing-item featured">
               <!--<span class="advanced">50% OFF</span> -->
               <h3 style="background: var(--background-light-color-1); color: var(--heading-color); ">TALLER TOP100</h3>
-              <p><strong>Curso presencial de fitness y bienestar integral</strong><br> 3 Meses de duración | 2 encuentros semanales</p>
-              
+              <p style="margin-bottom: 20px;"><strong>Curso presencial de fitness y bienestar integral</strong><br></p>
               <img src="assets/img/Prices/Card02.png" class="img-fluid" style="height: 150px; margin-bottom: 22px;">
               
               <ul>
-                <li><p><strong>¿Qué está incluido?</strong></p></li>
+                <li><p><strong>Tu Experiencia Incluye:</strong></p></li>
                 
-                <li><span class="material-symbols-outlined">task_alt</span>Acceso libre a todas las salas durante la cursada</li>
-                <li><span class="material-symbols-outlined">task_alt</span>Entrenador personal asignado a cada alumno</li>
-                <li><span class="material-symbols-outlined">task_alt</span>Certificado al aprobar el examen final</li>
+                <li><span class="material-symbols-outlined icon-price-card" style="background-color: var(--accent-light-color-3);">calendar_month</span>3 Meses de duración y 2 encuentros semanales</li>
+                <li><span class="material-symbols-outlined icon-price-card" style="background-color: var(--accent-light-color-4);">location_on</span>Modalidad presencial en nuestro centro</li>
+                <li><span class="material-symbols-outlined icon-price-card" style="background-color: var(--accent-light-color-1);">workspace_premium</span>Certificado de finalización al completar el curso</li>
 
               </ul>
               <h4 style="margin: 0px; padding: 0px;"><span style="text-decoration: line-through; margin: 0px; padding: 0px;">$50 usd / por mes </span></h4>
               <h4 class="h4-price"><sup>$</sup>25<span> usd / por mes </span><span style="font-weight: bold; font-style: italic; color: #8052C9; margin-left: 5px;">¡50% OFF!</span></h4>
              
               <div class="btn-wrap d-flex align-items-center justify-content-center">
-                <a href="#" class="btn-buy important"><span>QUIERO SER PARTE</span></a>
+                <a href="https://lourdesdigital.github.io/SendaZen/course" target="_blank" class="btn-buy important"><span>QUIERO SER PARTE</span></a>
               </div>
-              
+              <!--
               <h4 class="warranty" ><span class="material-symbols-outlined" >verified_user</span> Garantía de devolución de 30 días.</h4>
-          
+            -->
+
             </div>
           </div><!-- End Pricing Item -->
 
@@ -826,25 +824,26 @@
           <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="pricing-item featured">
               <h3>¡PROFESIONALIZATE!</h3>
-              <p><strong>Curso de formación integral</strong><br> 6 Meses de duración | 2 encuentros semanales</p>
-              
+
+              <p style="margin-bottom: 20px;"><strong>Curso avanzado de formación profesional</strong><br></p>
               <img src="assets/img/Prices/Card03.png" class="img-fluid" style="height: 150px; margin-bottom: 22px;">
               
               <ul>
-                <li><p><strong>¿Qué está incluido?</strong></p></li>
-                <li><span class="material-symbols-outlined">task_alt</span>Certificado profesional con alcance innacional</li>
-                <li><span class="material-symbols-outlined">task_alt</span>Acceso a una comunidad de profesionales</li>
-                <li><span class="material-symbols-outlined">task_alt</span>Posibilidad de trabajar con nosotros</li>
+                <li><p><strong>Tu Experiencia Incluye:</strong></p></li>
+                <li><span class="material-symbols-outlined icon-price-card" style="background-color: var(--accent-light-color-3);">calendar_month</span>6 Meses de duración y 2 encuentros semanales</li>
+                <li><span class="material-symbols-outlined icon-price-card" style="background-color: var(--accent-light-color-4);">location_on</span>Modalidad presencial en nuestro centro</li>
+                <li><span class="material-symbols-outlined icon-price-card" style="background-color: var(--accent-light-color-1);">workspace_premium</span>Título de finalización con alcance Nacional</li>
               </ul>
               <h4 style="margin: 0px; padding: 0px;"><span style="color:transparent; margin: 0px; padding: 0px;"> 0</span></h4>
               <h4 class="h4-price"><sup>$</sup>100<span> usd / por mes  </span></h4>
 
               <div class="btn-wrap d-flex align-items-center justify-content-center"> <!--  d-flex d-flex flex-column justify-content-center-->
-                <a href="#" class="btn-buy "><span>QUIERO SER PARTE</span></a>
+                <a href="https://lourdesdigital.github.io/SendaZen/course" target="_blank" class="btn-buy "><span>QUIERO SER PARTE</span></a>
               </div>
-              
+              <!--
               <h4 class="warranty" ><span class="material-symbols-outlined" >verified_user</span> Garantía de devolución de 30 días.</h4>
-          
+          -->
+
             </div>
           </div><!-- End Pricing Item -->
 
@@ -951,8 +950,107 @@
 
 
 
-<!-- Opinions Section -->
+
+
+
+
+<!-- 
 <section id="about" class="about section" style="margin: 0%; padding: 0%; background-color: var(--accent-light-color)">
+  <section style="border-top-right-radius: 200px; border-top-left-radius: 200px; background-color: var(--contrast-color)">
+
+       <br>
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Opiniones</h2>
+        <p><span>Mirá lo que </span> <span class="description-title">opinan</span><span> de nosotros.</span></p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <div class="about-content ps-0 ps-lg-3">
+                    <div style="margin: 0%; padding: 0%;" class="container section-title-opinion" data-aos="fade-up">
+                      <p style="text-align: left; margin-top: 20px;" class="fst-italic"><span class="description-title comillas">“ </span><span>¡Supero mis </span> <span class="description-title" style="color: var(--accent-dark-color-1);">expectativas</span><span>!</span></p>
+                    </div>
+                    <ul>
+                      <li>
+                        <i class="bi"><img style="border-radius: 100%;" src="assets/img/testimonials/img-02.png" alt="" class="img-fluid"></i>
+                        <div class="section-description-opinion">
+                          <h6 class="fst-italic">Los instructores realmente se preocupan por tu progreso y el apoyo es inigualable. Finalmente tengo las herramientas para llevar un estilo de vida saludable.</h6>
+                          <p class="section-opinion-by" style="margin-top: 15px; font-size: 20px;"><strong style="color:var(--accent-dark-color-1);">Gabi</strong>, participó del taller introductorio.</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                  <div class="about-content ps-0 ps-lg-3">
+                    <div style="margin: 0%; padding: 0%;" class="container section-title-opinion" data-aos="fade-up">
+                      <p style="text-align: left; margin-top: 20px;" class="fst-italic"><span class="description-title comillas">“ </span><span>¡Supero mis </span> <span class="description-title" style="color: var(--accent-dark-color-1);">expectativas</span><span>!</span></p>
+                    </div>
+                    <ul>
+                      <li>
+                        <i class="bi"><img style="border-radius: 100%;" src="assets/img/testimonials/img-02.png" alt="" class="img-fluid"></i>
+                        <div class="section-description-opinion">
+                          <h6 class="fst-italic">Los instructores realmente se preocupan por tu progreso y el apoyo es inigualable. Finalmente tengo las herramientas para llevar un estilo de vida saludable.</h6>
+                          <p class="section-opinion-by" style="margin-top: 15px; font-size: 20px;"><strong style="color:var(--accent-dark-color-1);">Gabi</strong>, participó del taller introductorio.</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                  <div class="about-content ps-0 ps-lg-3">
+                    <div style="margin: 0%; padding: 0%;" class="container section-title-opinion" data-aos="fade-up">
+                      <p style="text-align: left; margin-top: 20px;" class="fst-italic"><span class="description-title comillas">“ </span><span>¡Ahora tengo habitos </span> <span class="description-title" style="color: var(--accent-dark-color-1);">saludables</span><span>!</span></p>
+                    </div>
+                    <ul>
+                      <li>
+                        <i class="bi"><img style="border-radius: 100%;" src="assets/img/testimonials/img-03.png" alt="" class="img-fluid"></i>
+                        <div class="section-description-opinion">
+                          <h6 class="fst-italic">Aprendí los principios sobre nutrición, ejercicio y bienestar mental. Además, he conocido a personas increíbles que comparten mis mismos objetivos.</h6>
+                          <p class="section-opinion-by" style="margin-top: 15px; font-size: 20px;"><strong style="color:var(--accent-dark-color-1);">Isa</strong>, participó del taller de Nutrición.</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="carousel-indicators" style="margin: 0px;">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+            <img style="padding: 10%;" src="assets/img/opinions.png" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+  </section>
+</section>-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Opinions Section -->
+<section id="opinions" class="about section" style="margin: 0%; padding: 0%; background-color: var(--accent-light-color)">
   <section style="border-top-right-radius: 200px; border-top-left-radius: 200px; background-color: var(--contrast-color)">
       <!-- Section Title -->
        <br>
@@ -964,76 +1062,101 @@
       <div class="container">
         <div class="row gy-3">
           <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-
             
             <!-- 100% -->
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-              <div class="carousel-inner"> <!-- Un único contenedor carousel-inner -->
-                <div class="carousel-item active" data-bs-interval="3000">
-                  <div class="about-content ps-0 ps-lg-3">
-                    <!-- Section Title -->
-                    <div style="margin: 0%; padding: 0%;" class="container section-title-opinion" data-aos="fade-up">
-                      <p style="text-align: left; margin-top: 20px;" class="fst-italic"><span class="description-title comillas">“ </span><span>¡El taller </span> <span class="description-title" style="color: var(--accent-dark-color-1);">TOP100</span><span> me cambió la vida!</span></p>
-                    </div>
-                    <!-- End Section Title -->
-                    <ul>
-                      <li>
-                        <i class="bi"><img style="border-radius: 100%;" src="assets/img/testimonials/img-01.png" alt="" class="img-fluid"></i>
-                        <div class="section-description-opinion">
-                          <h6 class="fst-italic">Me ayudó a descubrir una nueva forma de entrenar y cuidar mi salud integral, conectando mente y cuerpo de una manera que nunca había experimentado antes...</h6>
-                          <p class="section-opinion-by" style="margin-top: 15px; font-size: 20px;"><strong style="color:var(--accent-dark-color-1);">Cata</strong>, estudiante graduada del taller TOP100.</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section">
+  
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-                <div class="carousel-item" data-bs-interval="3000">
-                  <div class="about-content ps-0 ps-lg-3">
-                    <!-- Section Title -->
-                    <div style="margin: 0%; padding: 0%;" class="container section-title-opinion" data-aos="fade-up">
-                      <p style="text-align: left; margin-top: 20px;" class="fst-italic"><span class="description-title comillas">“ </span><span>¡Supero mis </span> <span class="description-title" style="color: var(--accent-dark-color-1);">expectativas</span><span>!</span></p>
-                    </div>
-                    <!-- End Section Title -->
-                    <ul>
-                      <li>
-                        <i class="bi"><img style="border-radius: 100%;" src="assets/img/testimonials/img-02.png" alt="" class="img-fluid"></i>
-                        <div class="section-description-opinion">
-                          <h6 class="fst-italic">Los instructores realmente se preocupan por tu progreso y el apoyo es inigualable. Finalmente tengo las herramientas para llevar un estilo de vida saludable.</h6>
-                          <p class="section-opinion-by" style="margin-top: 15px; font-size: 20px;"><strong style="color:var(--accent-dark-color-1);">Gabi</strong>, partició del taller introductorio.</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+    <div class="swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
 
-                <div class="carousel-item" data-bs-interval="3000">
-                  <div class="about-content ps-0 ps-lg-3">
-                    <!-- Section Title -->
-                    <div style="margin: 0%; padding: 0%;" class="container section-title-opinion" data-aos="fade-up">
-                      <p style="text-align: left; margin-top: 20px;" class="fst-italic"><span class="description-title comillas">“ </span><span>¡Ahora tengo habitos </span> <span class="description-title" style="color: var(--accent-dark-color-1);">saludables</span><span>!</span></p>
-                    </div>
-                    <!-- End Section Title -->
-                    <ul>
-                      <li>
-                        <i class="bi"><img style="border-radius: 100%;" src="assets/img/testimonials/img-03.png" alt="" class="img-fluid"></i>
-                        <div class="section-description-opinion">
-                          <h6 class="fst-italic">Aprendí los principios sobre nutrición, ejercicio y bienestar mental. Además, he conocido a personas increíbles que comparten mis mismos objetivos.</h6>
-                          <p class="section-opinion-by" style="margin-top: 15px; font-size: 20px;"><strong style="color:var(--accent-dark-color-1);">Isa</strong>, partició del taller de Nutrición.</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="about-content ps-0 ps-lg-3">
+              <!-- Section Title -->
+              <div style="margin: 0%; padding: 0%;" class="container section-title-opinion" data-aos="fade-up">
+                <p style="text-align: left; margin-top: 20px;" class="fst-italic"><span class="description-title comillas">“ </span><span>¡Supero mis </span> <span class="description-title" style="color: var(--accent-dark-color-1);">expectativas</span><span>!</span></p>
               </div>
-
-              <div class="carousel-indicators" >
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
+              <!-- End Section Title -->
+              <ul>
+                <li>
+                  <i class="bi"><img style="border-radius: 100%;" src="assets/img/testimonials/img-02.png" alt="" class="img-fluid"></i>
+                  <div class="section-description-opinion">
+                    <h6 class="fst-italic">Los instructores realmente se preocupan por tu progreso y el apoyo es inigualable. Finalmente tengo las herramientas para llevar un estilo de vida saludable.</h6>
+                    <p class="section-opinion-by" style="margin-top: 15px; font-size: 20px;"><strong style="color:var(--accent-dark-color-1);">Gabi</strong>, participó del taller introductorio.</p>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <!-- FIN 100% -->
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="about-content ps-0 ps-lg-3">
+              <!-- Section Title -->
+              <div style="margin: 0%; padding: 0%;" class="container section-title-opinion" data-aos="fade-up">
+                <p style="text-align: left; margin-top: 20px;" class="fst-italic"><span class="description-title comillas">“ </span><span>¡Supero mis </span> <span class="description-title" style="color: var(--accent-dark-color-1);">expectativas</span><span>!</span></p>
+              </div>
+              <!-- End Section Title -->
+              <ul>
+                <li>
+                  <i class="bi"><img style="border-radius: 100%;" src="assets/img/testimonials/img-02.png" alt="" class="img-fluid"></i>
+                  <div class="section-description-opinion">
+                    <h6 class="fst-italic">Los instructores realmente se preocupan por tu progreso y el apoyo es inigualable. Finalmente tengo las herramientas para llevar un estilo de vida saludable.</h6>
+                    <p class="section-opinion-by" style="margin-top: 15px; font-size: 20px;"><strong style="color:var(--accent-dark-color-1);">Gabi</strong>, participó del taller introductorio.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="about-content ps-0 ps-lg-3">
+              <!-- Section Title -->
+              <div style="margin: 0%; padding: 0%;" class="container section-title-opinion" data-aos="fade-up">
+                <p style="text-align: left; margin-top: 20px;" class="fst-italic"><span class="description-title comillas">“ </span><span>¡Ahora tengo habitos </span> <span class="description-title" style="color: var(--accent-dark-color-1);">saludables</span><span>!</span></p>
+              </div>
+              <!-- End Section Title -->
+              <ul>
+                <li>
+                  <i class="bi"><img style="border-radius: 100%;" src="assets/img/testimonials/img-03.png" alt="" class="img-fluid"></i>
+                  <div class="section-description-opinion">
+                    <h6 class="fst-italic">Aprendí los principios sobre nutrición, ejercicio y bienestar mental. Además, he conocido a personas increíbles que comparten mis mismos objetivos.</h6>
+                    <p class="section-opinion-by" style="margin-top: 15px; font-size: 20px;"><strong style="color:var(--accent-dark-color-1);">Isa</strong>, participó del taller de Nutrición.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section>
           </div>
 
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
@@ -1043,6 +1166,11 @@
       </div>
   </section>
 </section><!-- /Opinions Section -->
+
+
+
+
+
 
 
 
@@ -1316,15 +1444,21 @@
 
             <div class="info-wrap">
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/Icons/localizacion.png" alt="">
+                <!--<img src="assets/img/Icons/localizacion.png" alt="">-->
+                <div class="icon-container-Estamos-con-vos"  > 
+                  <i class="bi bi-geo-alt info-icons-Estamos-con-vos" style="border-radius: 100%; font-size: 30px; font-style: bold; -webkit-text-stroke: 0.7px currentColor; background-color:#FFBDBC; color: var(--heading-color);"></i>
+                </div>
                 <div>
                   <h3>Dirección</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>Av. Int. Güiraldes 2160, Buenos Aires, AR</p>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/img/Icons/llamada.png" alt="">
+                <!--<img src="assets/img/Icons/localizacion.png" alt="">-->
+                <div class="icon-container-Estamos-con-vos" style="padding: 0px; margin: 0px;" > 
+                  <i class="bi bi-telephone info-icons-Estamos-con-vos" style="border-radius: 100%; font-size: 30px; font-style: bold; -webkit-text-stroke: 0.7px currentColor; background-color:var(--accent-light-color-1); color: var(--heading-color);"></i>
+                </div>
                 <div>
                   <h3>LLamanos</h3>
                   <p>+1 5589 55488 55</p>
@@ -1332,7 +1466,10 @@
               </div><!-- End Info Item -->
 
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <img src="assets/img/Icons/correo.png" alt="">
+                <!--<img src="assets/img/Icons/localizacion.png" alt="">-->
+                <div class="icon-container-Estamos-con-vos" style="padding: 0px; margin: 0px;" > 
+                  <i class="bi bi-envelope info-icons-Estamos-con-vos" style="border-radius: 100%; font-size: 30px; font-style: bold; -webkit-text-stroke: 0.7px currentColor; background-color:var(--accent-light-color-3); color: var(--heading-color);"></i>
+                </div>
                 <div>
                   <h3>Email</h3>
                   <p>info@sendazen.com</p>
@@ -1444,35 +1581,34 @@
             <span class="sitename">SendaZen</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
+            <p>Av. Int. Güiraldes 2160,</p>
+            <p>Buenos Aires, AR</p>
             <p class="mt-3"><strong>Teléfono:</strong> <span>+1 5589 55488 55</span></p>
             <p><strong>Email:</strong> <span>info@SendaZen.com</span></p>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Links Útiles</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#about">Sobre nosotros</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#team">Nuestro equipo</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#vision">Nuestra visión</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4>Nuestros Talleres</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://lourdesdigital.github.io/SendaZen/course" target="_blank">Taller Introductorio</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://lourdesdigital.github.io/SendaZen/course" target="_blank">Taller TOP100</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://lourdesdigital.github.io/SendaZen/course" target="_blank">Profesionalizate</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
+          <h4>¡Seguinos en redes!</h4>
           <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
           <div class="social-links d-flex">
             <a style="background-color:var(--accent-light-color); color: black;" href="">   <i class="bi bi-twitter-x" ></i></a>
