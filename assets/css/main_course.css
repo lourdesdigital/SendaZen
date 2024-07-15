@@ -2645,12 +2645,10 @@ section,
   .hero h1{
     padding-left: 25px;
     padding-right: 25px;
+    text-align: center;
   }
 
-  .hero h1{
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+ 
 
   .hero h1{
     font-size: 45px;
@@ -3001,7 +2999,9 @@ section,
 }
 
 
-
+.imgbanner{
+  width: 90%;
+}
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
