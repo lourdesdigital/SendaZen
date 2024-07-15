@@ -969,8 +969,12 @@ section,
   color: var(--accent-light-color-1);
 }
 
+.primaryContentCupon{
+  text-align: left;
+}
+
 .primaryContentCupon p span{
-  color: var(--heading-color);  
+  color: var(--heading-color); 
 }
  
 .primaryContentCupon p .description-title {
