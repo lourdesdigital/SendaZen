@@ -2684,7 +2684,7 @@ section,
 
 /* MOBILE CARDS NUEVAS */
 
-@media (max-width: 432px) {
+@media (max-width: 1199px) {
   
   
   .container-profesionales {
@@ -2830,7 +2830,7 @@ body{
 
   margin-top: 0%;
   margin-bottom: 0%;
-}
+
 
   .class-profesionales h2 {
     text-transform: capitalize;
