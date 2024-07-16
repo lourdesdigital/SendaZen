@@ -1109,10 +1109,16 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding-top: 60px;
+  /* padding: 60px 0; */
   scroll-margin-top: 118px;
   overflow: clip;
 }
+
+section h2,
+.section h2{
+  margin-top: 60px;
+}
+
 
 @media (max-width: 1199px) {
 
