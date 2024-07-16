@@ -910,16 +910,19 @@ section,
   color: var(--default-color);
   background-color: var(--background-color);
   padding-bottom: 20px;
-  /*padding-top: 60px;*/
+  padding-top: 60px;
   scroll-margin-top: 118px;
   overflow: clip;
 }
 
+/*
 section h2,
 .section h2{
+  padding-bottom: 20px;
   margin-top: 60px;
 }
 
+*/
 
 @media (max-width: 1199px) {
 
@@ -934,7 +937,7 @@ section h2,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   position: relative;
   line-height: 220%;
   
